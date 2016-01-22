@@ -43,7 +43,7 @@ class VkarbasizaedSubmissionTest extends ContentBaseTestCase {
 		$this->assignReviewer('jjanssen', 'Julie Janssen');
 		$this->assignReviewer('phudson', 'Paul Hudson');
 		$this->recordEditorialDecision('Accept Submission');
-		$this->waitForElementPresent('//a[contains(text(), \'Editorial\')]/*[contains(text(), \'Initiated\')]');
+		$this->waitForElementPresent('//a[contains(text(), \'Copyediting\')]/*[contains(text(), \'Initiated\')]');
 		$this->assignParticipant('Copyeditor', 'Maria Fritz');
 		$this->recordEditorialDecision('Send To Production');
 		$this->waitForElementPresent('//a[contains(text(), \'Production\')]/*[contains(text(), \'Initiated\')]');
@@ -57,7 +57,7 @@ class VkarbasizaedSubmissionTest extends ContentBaseTestCase {
 		$this->type('css=[id^=label-]', 'PDF');
 		$this->select('id=galleyType', 'PDF.JS PDF Viewer');
 		$this->click('//button[text()=\'Save\']');
-		$this->waitJQuery();
+		$this->waitForElementNotPresent('css=div.pkp_modal_panel');
 
 		// Upload a galley file
 		$this->waitForElementPresent($selector='//table[contains(@id,\'component-grid-articlegalleys-articlegalleygrid-\')]//span[contains(.,\'PDF\')]/../a[contains(@id,\'-name-addFile-button-\')]');

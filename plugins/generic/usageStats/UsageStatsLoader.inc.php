@@ -41,9 +41,8 @@ class UsageStatsLoader extends PKPUsageStatsLoader {
 				'article/view'),
 			ASSOC_TYPE_ISSUE => array(
 				'issue/view'),
-			ASSCO_TYPE_ISSUE_GALLEY => array(
-				'issue/download',
-				'issue/viewDownloadInterstitial')
+			ASSOC_TYPE_ISSUE_GALLEY => array(
+				'issue/download')
 		);
 
 		$pageAndOp[Application::getContextAssocType()][] = 'index';
@@ -67,11 +66,9 @@ class UsageStatsLoader extends PKPUsageStatsLoader {
 					if (!$article) break;
 
 					if (!isset($args[2])) break;
-					$fileIdAndRevision = $args[2];
-					list($fileId, $revision) = array_map(create_function('$a', 'return (int) $a;'), preg_split('/-/', $fileIdAndRevision));
-
+					$fileId = $args[2];
 					$articleFileDao = DAORegistry::getDAO('SubmissionFileDAO');
-					$articleFile = $articleFileDao->getRevision($fileId, $revision);
+					$articleFile = $articleFileDao->getLatestRevision($fileId);
 					if ($articleFile) {
 						$assocId = $articleFile->getFileId();
 					}
@@ -116,11 +113,28 @@ class UsageStatsLoader extends PKPUsageStatsLoader {
 	}
 
 	/**
+	 * @copydoc PKPUsageStatsLoader::getFileType()
+	 */
+	protected function getFileTypeFromAssoc($assocType, $assocId) {
+		$type = parent::getFileTypeFromAssoc($assocType, $assocId);
+		if (!$type) {
+			switch ($assocType) {
+				case ASSOC_TYPE_ISSUE_GALLEY:
+					$issueGalleyDao = DAORegistry::getDAO('IssueGalleyDAO');
+					$issueGalley = $issueGalleyDao->getById($assocId);
+					$type = $this->getFileTypeFromFile($issueGalley);
+					break;
+			}
+		}
+
+		return $type;
+	}
+
+	/**
 	 * @see PKPUsageStatsLoader::getMetricType()
 	 */
 	protected function getMetricType() {
 		return OJS_METRIC_TYPE_COUNTER;
 	}
-
 }
 ?>

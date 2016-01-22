@@ -6,7 +6,7 @@
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Styles applying to the lightweight page for viewing PDFs
- * @link templates/user/register.tpl
+ * @link templates/frontend/pages/userRegister.tpl
  */
 .page_register {
 
@@ -64,6 +64,10 @@
 
 	// Styles for user group panel, which is still tied to a template
 	// shared by the backend
+	.pkp_controllers_extrasOnDemand {
+		margin-top: @base;
+	}
+
 	.checkbox_and_radiobutton {
 		&:extend(.pkp_unstyled_list);
 	}

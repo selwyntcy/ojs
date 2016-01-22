@@ -73,6 +73,7 @@
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/FileUploadFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/MultilingualInputHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/CancelActionAjaxFormHandler.js"></script>
+<script src="{$baseUrl}/lib/pkp/js/controllers/form/UserFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/reviewer/ReviewerReviewStep3FormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/GridHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/CategoryGridHandler.js"></script>
@@ -96,7 +97,7 @@
 <script src="{$baseUrl}/lib/pkp/js/controllers/wizard/fileUpload/form/FileUploadFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/wizard/fileUpload/form/RevisionConfirmationHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/filter/form/FilterFormHandler.js"></script>
-<script src="{$baseUrl}/lib/pkp/js/controllers/grid/settings/user/form/UserFormHandler.js"></script>
+<script src="{$baseUrl}/lib/pkp/js/controllers/grid/settings/user/form/UserDetailsFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/settings/roles/form/UserGroupFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/tab/settings/form/FileViewFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/tab/settings/announcements/form/AnnouncementSettingsFormHandler.js"></script>
@@ -108,6 +109,7 @@
 <script src="{$baseUrl}/lib/pkp/js/controllers/tab/workflow/WorkflowTabHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/tab/representations/RepresentationsTabHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/informationCenter/NotesHandler.js"></script>
+<script src="{$baseUrl}/lib/pkp/js/controllers/statistics/ReportGeneratorFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/dashboard/form/DashboardTaskFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/pages/header/HeaderHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/pages/header/TasksHandler.js"></script>
@@ -121,7 +123,6 @@
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/AdvancedReviewerSearchHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/form/EditReviewFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/form/AddReviewerFormHandler.js"></script>
-<script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/form/ReviewerFormFooterHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/form/AdvancedSearchReviewerFilterFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/stageParticipant/form/StageParticipantNotifyHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/stageParticipant/form/AddParticipantFormHandler.js"></script>

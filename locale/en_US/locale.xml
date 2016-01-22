@@ -26,7 +26,8 @@
 	-->
 
 	<!-- common -->
-	<message key="context.select">Select a Journal...</message>
+	<message key="context.current">Current Journal:</message>
+	<message key="context.select">Switch to another journal:</message>
 
 	<!-- Categories -->
 	<message key="navigation.categories">Categories</message>
@@ -50,7 +51,6 @@
 	<message key="common.confirmComplete">Are you sure you wish to mark this task as completed? You may not be able to make changes afterwards.</message>
 	<message key="common.payment">Payment</message>
 	<message key="common.payments">Payments</message>
-	<message key="common.pageHeader.altText">Page Header</message>
 	<message key="common.homePageHeader.altText">Homepage Header</message>
 	<message key="common.journalHomepageImage.altText">Journal Homepage Image</message>
 
@@ -1147,8 +1147,8 @@ Validation may fail on search URLs that require posted form data.]]></message>
 	<message key="notification.type.approveSubmission">This submission is currently awaiting approval before it will appear in the issue.</message>
 	<message key="notification.type.approveSubmissionTitle">Awaiting approval.</message>
 
-	<message key="user.profile.form.showOtherContexts">Show Other Journals</message>
-	<message key="user.profile.form.hideOtherContexts">Hide Other Journals</message>
+	<message key="user.profile.form.showOtherContexts">Register with other journals</message>
+	<message key="user.profile.form.hideOtherContexts">Hide other journals</message>
 
 	<message key="article.view.interstitial">Please choose an article file to download.</message>
 	<message key="grid.catalogEntry.availableRepresentation.approved">Approved</message>

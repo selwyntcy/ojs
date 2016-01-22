@@ -52,10 +52,6 @@ class IndexHandler extends Handler {
 
 		if ($journal) {
 			// Assign header and content for home page
-			$templateMgr->assign('displayPageHeaderTitle', $journal->getLocalizedPageHeaderTitle(true));
-			$templateMgr->assign('displayPageHeaderLogo', $journal->getLocalizedPageHeaderLogo(true));
-			$templateMgr->assign('displayPageHeaderTitleAltText', $journal->getLocalizedSetting('homeHeaderTitleImageAltText'));
-			$templateMgr->assign('displayPageHeaderLogoAltText', $journal->getLocalizedSetting('homeHeaderLogoImageAltText'));
 			$templateMgr->assign('additionalHomeContent', $journal->getLocalizedSetting('additionalHomeContent'));
 			$templateMgr->assign('homepageImage', $journal->getLocalizedSetting('homepageImage'));
 			$templateMgr->assign('homepageImageAltText', $journal->getLocalizedSetting('homepageImageAltText'));
@@ -114,7 +110,7 @@ class IndexHandler extends Handler {
 			$templateMgr->assign('site', $site);
 
 			$templateMgr->setCacheability(CACHEABILITY_PUBLIC);
-			$templateMgr->display('index/site.tpl');
+			$templateMgr->display('frontend/pages/indexSite.tpl');
 		}
 	}
 }

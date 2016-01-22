@@ -9,7 +9,7 @@
  *
  * @uses $currentJournal Journal The current journal
  *}
-{include file="common/frontend/header.tpl" pageTitle="about.editorialTeam"}
+{include file="frontend/components/header.tpl" pageTitle="about.editorialTeam"}
 
 <div class="page page_editorial_team">
 	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"}

@@ -1,5 +1,5 @@
 {**
- * templates/header/primaryNavMenu.tpl
+ * templates/frontend/components/primaryNavMenu.tpl
  *
  * Copyright (c) 2014-2015 Simon Fraser University Library
  * Copyright (c) 2003-2015 John Willinsky
@@ -32,11 +32,16 @@
 			</li>
 		{/if}
 
-		<li class="has-submenu">
+		<li class="has_submenu">
 			<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
 				{translate key="navigation.about"}
 			</a>
 			<ul>
+				<li>
+					<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
+						{translate key="about.aboutTheJournal"}
+					</a>
+				</li>
 				<li>
 					<a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">
 						{translate key="about.editorialTeam"}
