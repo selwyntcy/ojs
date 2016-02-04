@@ -175,7 +175,7 @@ Vid den redaktionella granskningen av manuskriptet &quot;{$submissionTitle}&quot
 <br />
 			Vår tidskrift {$contextName} har fått manuskriptet &quot;{$submissionTitle}&quot; tillskickat oss, och vi hoppas att du har möjlighet att göra en sakkunnigbdömning av manuskriptet eftersom vi anser att manuskriptets ämne matchar ditt kompetensområde. Manuskriptets sammanfattning är bifogad nedan.<br />
 			<br />
-			Vänligen logga in på tidskriftens hemsida innan {$weekLaterDate}, för att bekräfta om du har möjlighet att åta dig uppdraget eller inte. Om du väljer att granska manuskriptet ska du också använda tidkriftens hemsida för att lämna kommentarer och bedömning. Adressen till hemsidan är: <a href="{$contextUrl}">{$contextUrl}</a><br />
+			Vänligen logga in på tidskriftens hemsida innan {$responseDueDate}, för att bekräfta om du har möjlighet att åta dig uppdraget eller inte. Om du väljer att granska manuskriptet ska du också använda tidkriftens hemsida för att lämna kommentarer och bedömning. Adressen till hemsidan är: <a href="{$contextUrl}">{$contextUrl}</a><br />
 			<br />
 			Sista dag för bedömning är {$reviewDueDate}.<br />
 			<br />
@@ -201,7 +201,7 @@ Tack för hjälp, vänligen<br />
 <br />
 				Vår tidskrift {$contextName} har fått manuskriptet &quot;{$submissionTitle},&quot; tillskickat oss. Utifrån dina ämneskunskaper tror vi att du skulle sakkunnigbedöma manuskriptet på ett ypperligt sätt. Manuskriptets sammanfattning är bifogat nedan, och vi hoppas att du har möjlighet att genomföra detta viktiga arbete.<br />
 <br />
-				Vänligen logga in i tidskriften senast {$weekLaterDate} för att meddela om du avser granska manuskriptet eller inte. Väl inloggad kan du även läsa manuskriptet, avge bedömning samt lämna kommnetarer och rekommendationer.<br />
+				Vänligen logga in i tidskriften senast {$responseDueDate} för att meddela om du avser granska manuskriptet eller inte. Väl inloggad kan du även läsa manuskriptet, avge bedömning samt lämna kommnetarer och rekommendationer.<br />
 <br />
 				Bedömningen ska vara genomförd innan {$reviewDueDate}.<br />
 <br />
@@ -227,7 +227,7 @@ Tack för hjälp, vänligen<br />
 	<br />
 	Se länk nedan för information om tidskriftens riktlinjer för sakkunigbedömning. Manuskriptet bifogas i det här mailet. Bedömning av manuskriptet, samt rekommendation, ska mailas till mig senast {$reviewDueDate}.<br />
 <br />
-	Vänligen meddela mig innan {$weekLaterDate}, för att bekräfta om du har möjlighet att åta dig uppdraget eller inte<br />
+	Vänligen meddela mig innan {$responseDueDate}, för att bekräfta om du har möjlighet att åta dig uppdraget eller inte<br />
 <br />
 	Tack för din hjälp.<br />
 	<br />

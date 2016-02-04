@@ -180,7 +180,7 @@ Moltes gràcies,<br />
 <br />
 Considero que el vostre perfil és adequat per a revisar el manuscrit &quot;{$submissionTitle}&quot; tramès a la revista {$contextName}. A continuació trobareu un resum de la tramesa, i confio que acceptareu encarregar-vos d'aquesta important tasca.<br />
 <br />
-Us demano que inicieu la sessió a la revista abans del {$weekLaterDate} per a indicar-nos si accepteu o no encarregar-vos de la revisió de la tramesa i, en cas d'acceptar-la, per a accedir-hi i enregistrar-ne la revisió i recomanació. El lloc web de la revista és <a href="{$contextUrl}">{$contextUrl}</a>.<br />
+Us demano que inicieu la sessió a la revista abans del {$responseDueDate} per a indicar-nos si accepteu o no encarregar-vos de la revisió de la tramesa i, en cas d'acceptar-la, per a accedir-hi i enregistrar-ne la revisió i recomanació. El lloc web de la revista és <a href="{$contextUrl}">{$contextUrl}</a>.<br />
 <br />
 La data límit per a la revisió és el {$reviewDueDate}.<br />
 <br />
@@ -205,7 +205,7 @@ Gràcies per tenir en compte aquesta sol·licitud.<br />
 <br />
 Considero que el vostre perfil és adequat per a revisar el manuscrit &quot;{$submissionTitle}&quot; tramès a la revista {$contextName}. A continuació trobareu un resum de la tramesa, i confio que acceptareu encarregar-vos d'aquesta important tasca.<br />
 <br />
-Us demano que inicieu la sessió a la revista abans del {$weekLaterDate} per a indicar-nos si accepteu o no encarregar-vos de la revisió de la tramesa i, en cas d'acceptar-la, per a accedir-hi i enregistrar-ne la revisió i recomanació.<br />
+Us demano que inicieu la sessió a la revista abans del {$responseDueDate} per a indicar-nos si accepteu o no encarregar-vos de la revisió de la tramesa i, en cas d'acceptar-la, per a accedir-hi i enregistrar-ne la revisió i recomanació.<br />
 <br />
 La data límit per a la revisió és el {$reviewDueDate}.<br />
 <br />
@@ -228,7 +228,7 @@ Gràcies per tenir en compte aquesta sol·licitud.<br />
 <br />
 Considero que el vostre perfil és adequat per a revisar el manuscrit &quot;{$submissionTitle}&quot; tramès a la revista {$contextName}, per la qual cosa us demano que valoreu la possibilitat d'encarregar-vos d'aquesta important tasca per a la nostra revista. A continuació trobareu les indicacions per a la revisió d'aquesta revista, així com també la tramesa com a fitxer adjunt. Noteu que m'hauríeu de fer arribar per correu electrònic la revisió de la tramesa i la recomanació corresponent abans del {$reviewDueDate}.<br />
 <br />
-Us demano que respongueu a aquest missatge abans del {$weekLaterDate} per a indicar-nos si accepteu encarregar-vos de la revisió.<br />
+Us demano que respongueu a aquest missatge abans del {$responseDueDate} per a indicar-nos si accepteu encarregar-vos de la revisió.<br />
 <br />
 Gràcies per tenir en compte aquesta sol·licitud.<br />
 <br />

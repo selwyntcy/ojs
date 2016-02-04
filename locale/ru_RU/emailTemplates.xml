@@ -164,7 +164,7 @@ Thank you,<br />
 <br />
 I believe that you would serve as an excellent reviewer of the manuscript, &quot;{$submissionTitle},&quot; which has been submitted to {$contextName}. The submission's extract is inserted below, and I hope that you will consider undertaking this important task for us.<br />
 <br />
-Please log into the journal web site by {$weekLaterDate} to indicate whether you will undertake the review or not, as well as to access the submission and to record your review and recommendation. The web site is <a href="{$contextUrl}">{$contextUrl}</a><br />
+Please log into the journal web site by {$responseDueDate} to indicate whether you will undertake the review or not, as well as to access the submission and to record your review and recommendation. The web site is <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 The review itself is due {$reviewDueDate}.<br />
 <br />
@@ -190,7 +190,7 @@ Abstract<br />
 <br />
 I believe that you would serve as an excellent reviewer of the manuscript, &quot;{$submissionTitle},&quot; and I am asking that you consider undertaking this important task for us. The Review Guidelines for this journal are appended below, and the submission is attached to this email. Your review of the submission, along with your recommendation, should be emailed to me by {$reviewDueDate}.<br />
 <br />
-Please indicate in a return email by {$weekLaterDate} whether you are able and willing to do the review.<br />
+Please indicate in a return email by {$responseDueDate} whether you are able and willing to do the review.<br />
 <br />
 Thank you for considering this request.<br />
 <br />
@@ -572,7 +572,7 @@ Thank you for completing the proofreading corrections for the galleys associated
 <br />
 Я уверен, Вы могли бы стать очень хорошим рецензентом для рукописи, &quot;{$submissionTitle},&quot; (ее резюме Вы найдете ниже) присланной для публикации в журнале {$contextName}. Надеюсь, на Вашу помощь в столь важной для нас задаче.<br />
 <br />
-Пожалуйста войдите на сайт нашего журнала до {$weekLaterDate}, чтобы согласиться (или отклонить) это предложение, либо чтобы получить доступ к полному тексту рукописи и передать Вашу рецензию и рекомендации.<br />
+Пожалуйста войдите на сайт нашего журнала до {$responseDueDate}, чтобы согласиться (или отклонить) это предложение, либо чтобы получить доступ к полному тексту рукописи и передать Вашу рецензию и рекомендации.<br />
 <br />
 Если Вы согласны, рецензию требуется отправить до {$reviewDueDate}.<br />
 <br />

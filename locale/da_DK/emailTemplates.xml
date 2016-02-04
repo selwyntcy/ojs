@@ -162,7 +162,7 @@ Tak. {$editorialContactSignature}]]></body>
 <br />
 Jeg tror, at du vil være en fremragende bedømmer af manuskriptet &quot;{$submissionTitle}&quot;, der er blevet sendt til {$contextName}. Nedenfor finder du et resumé af manuskriptet, og jeg håber, at du vil overveje at påtage dig denne vigtige opgave for os.<br />
 <br />
-Log på tidsskriftets websted inden den {$weekLaterDate} for at angive, om du vil påtage dig bedømmelsen eller ej, samt for at få adgang til manuskriptet og registrere din bedømmelse og anbefaling. Webstedet er <a href="{$contextUrl}">{$contextUrl}</a><br />
+Log på tidsskriftets websted inden den {$responseDueDate} for at angive, om du vil påtage dig bedømmelsen eller ej, samt for at få adgang til manuskriptet og registrere din bedømmelse og anbefaling. Webstedet er <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 Selve bedømmelsen skal afleveres senest den {$reviewDueDate}.<br />
 <br />
@@ -187,7 +187,7 @@ Tak for din overvejelse af denne forespørgsel.<br />
 <br />
 Jeg tror, at du vil være en fremragende bedømmer af manuskriptet &quot;{$submissionTitle}&quot;, der er blevet sendt til {$contextName}. Nedenfor finder du et resumé af manuskriptet, og jeg håber, at du vil overveje at påtage dig denne vigtige opgave for os.<br />
 <br />
-Log på tidsskriftets websted inden den {$weekLaterDate} for at angive, om du vil påtage dig bedømmelsen eller ej, samt for at få adgang til manuskriptet og registrere din bedømmelse og anbefaling.<br />
+Log på tidsskriftets websted inden den {$responseDueDate} for at angive, om du vil påtage dig bedømmelsen eller ej, samt for at få adgang til manuskriptet og registrere din bedømmelse og anbefaling.<br />
 <br />
 Selve bedømmelsen skal afleveres senest den {$reviewDueDate}.<br />
 <br />
@@ -210,7 +210,7 @@ Tak for din overvejelse af denne forespørgsel.<br />
 <br />
 Jeg tror, at du vil kunne være en fremragende bedømmer af manuskriptet &quot;{$submissionTitle}&quot;, og jeg beder dig om at overveje at påtage dig denne vigtige opgave for os. Dette tidsskrifts Retningslinjer for bedømmelser er angivet nedenfor, og manuskriptet er vedhæftet denne e-mail. Din bedømmelse af manuskriptet samt din anbefaling skal sendes til mig pr. e-mail senest den {$reviewDueDate}.<br />
 <br />
-Meld venligst tilbage via e-mail inden den {$weekLaterDate}, om du kan og er villig til at foretage bedømmelsen.<br />
+Meld venligst tilbage via e-mail inden den {$responseDueDate}, om du kan og er villig til at foretage bedømmelsen.<br />
 <br />
 Tak for din overvejelse af denne forespørgsel.<br />
 <br />

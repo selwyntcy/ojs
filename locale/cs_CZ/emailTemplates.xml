@@ -170,7 +170,7 @@ Děkujeme,<br />
 <br />
 Domnívám se, že byste mohl být výborným recenzentem příspěvku &quot;{$submissionTitle},&quot; který byl zaslán do {$contextName}. Abstrakt příspěvku je vložen níže. Věřím, že zvážíte možnost přijetí tohoto pro nás důležitého úkolu.<br />
 <br />
-Prosím, přihlaste se do {$weekLaterDate} na stránkách časopisu, abyste uvedl, zda recenzi zpracujete nebo ne a také pro přístup k příspěvku a zaznamenání Vaší recenze a doporučení. Adresa webové stránky je <a href="{$contextUrl}">{$contextUrl}</a><br />
+Prosím, přihlaste se do {$responseDueDate} na stránkách časopisu, abyste uvedl, zda recenzi zpracujete nebo ne a také pro přístup k příspěvku a zaznamenání Vaší recenze a doporučení. Adresa webové stránky je <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 Termín pro zpracování recenze je {$reviewDueDate}.<br />
 <br />
@@ -195,7 +195,7 @@ Děkujeme za zvážení této žádosti.<br />
 <br />
 Domnívám se, že byste mohl být výborným recenzentem příspěvku &quot;{$submissionTitle},&quot; který byl zaslán do {$contextName}. Abstrakt příspěvku je vložen níže. Věřím, že zvážíte možnost přijetí tohoto pro nás důležitého úkolu.<br />
 <br />
-Prosím, přihlaste se do {$weekLaterDate} na stránkách časopisu, abyste uvedl, zda recenzi zpracujete nebo ne a také pro přístup k příspěvku a zaznamenání Vaší recenze a doporučení.<br />
+Prosím, přihlaste se do {$responseDueDate} na stránkách časopisu, abyste uvedl, zda recenzi zpracujete nebo ne a také pro přístup k příspěvku a zaznamenání Vaší recenze a doporučení.<br />
 <br />
 Termín pro zpracování recenze je {$reviewDueDate}.<br />
 <br />
@@ -218,7 +218,7 @@ Děkujeme za zvážení této žádosti.<br />
 <br />
 Domnívám se, že byste mohl být výborným recenzentem příspěvku &quot;{$submissionTitle}&quot; a žádám Vás, abyste zvážil možnost přijetí tohoto pro nás důležitého úkolu. Instrukce pro zpracování recenze pro tento časopis jsou připojeny níže a příspěvek je přiložen k tomuto emailu. Vaši recenzi příspěvku spolu s Vaším doporučením byste mi měl zaslat emailem do {$reviewDueDate}.<br />
 <br />
-Uveďte prosím do {$weekLaterDate} v odpovědi na tento email, zda můžete a chcete zpracovat tuto recenzi.<br />
+Uveďte prosím do {$responseDueDate} v odpovědi na tento email, zda můžete a chcete zpracovat tuto recenzi.<br />
 <br />
 Děkujeme za zvážení této žádosti.<br />
 <br />

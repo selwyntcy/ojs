@@ -209,7 +209,7 @@
 <br />
 《{$contextName}》的编辑团队相信您是投稿到本期刊之稿件〈{$submissionTitle}〉的最佳审查人选。该份稿件的摘要如下，而我们希望您会考虑进行这份对我们来说相当重要的一个工作。<br />
 <br />
-无论您是否接受审查工作与否，都请在{$weekLaterDate}之前登入这个期刊网站，同时检阅这份稿件并且记录您的审查意见和编辑建议。网站为：<a href="{$contextUrl}">{$contextUrl}</a><br />
+无论您是否接受审查工作与否，都请在{$responseDueDate}之前登入这个期刊网站，同时检阅这份稿件并且记录您的审查意见和编辑建议。网站为：<a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 请注意审查工作的期限为：{$reviewDueDate}。<br />
 <br />
@@ -235,7 +235,7 @@
 <br />
 《{$contextName}》的编辑团队相信您是投稿到本期刊之稿件〈{$submissionTitle}〉的最佳审查人选。该份稿件的摘要如下，而我们希望您会考虑进行这项对我们来说相当重要的工作。<br />
 <br />
-无论您是否接受审查工作与否，都请在{$weekLaterDate}之前登入这个期刊网站，同时检阅这份稿件并且记录您的审查意见和编辑建议。<br />
+无论您是否接受审查工作与否，都请在{$responseDueDate}之前登入这个期刊网站，同时检阅这份稿件并且记录您的审查意见和编辑建议。<br />
 <br />
 请注意审查工作的期限为：{$reviewDueDate}。<br />
 <br />
@@ -258,7 +258,7 @@
 <br />
 我相信您是投稿到本期刊之稿件〈{$submissionTitle}〉的最佳审查人选，而我们希望您会考虑进行这份对我们来说相当重要的一个工作。该份期刊的审查指引已经附列如下，而稿件随附在这封电子邮件的附加档案之中。如果您接受这份审查工作，麻烦您在{$reviewDueDate}之前，将您对这份稿件的审查意见书以及编辑建议寄给我们。<br />
 <br />
-无论您是否接受审查工作与否，都请在{$weekLaterDate}之内回复此封电子邮件给我们，告知我们您是否愿意进行审查工作。<br />
+无论您是否接受审查工作与否，都请在{$responseDueDate}之内回复此封电子邮件给我们，告知我们您是否愿意进行审查工作。<br />
 <br />
 非常感谢您考虑我们的邀请。<br />
 {$editorialContactSignature}<br />
@@ -903,7 +903,7 @@ This regards the manuscript &quot;{$submissionTitle},&quot; which is under consi
 <br />
 Following the review of the previous version of the manuscript, the authors have now submitted a revised version of their paper. We would appreciate it if you could help evaluate it.<br />
 <br />
-Please log into the journal web site by {$weekLaterDate} to indicate whether you will undertake the review or not, as well as to access the submission and to record your review and recommendation. The web site is <a href="{$contextUrl}">{$contextUrl}</a><br />
+Please log into the journal web site by {$responseDueDate} to indicate whether you will undertake the review or not, as well as to access the submission and to record your review and recommendation. The web site is <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 The review itself is due {$reviewDueDate}.<br />
 <br />
@@ -932,7 +932,7 @@ Following the review of the previous version of the manuscript, the authors have
 <br />
 The Review Guidelines for this journal are appended below, and the submission is attached to this email. Your review of the submission, along with your recommendation, should be emailed to me by {$reviewDueDate}.<br />
 <br />
-Please indicate in a return email by {$weekLaterDate} whether you are able and willing to do the review.<br />
+Please indicate in a return email by {$responseDueDate} whether you are able and willing to do the review.<br />
 <br />
 Thank you for considering this request.<br />
 <br />
@@ -971,7 +971,7 @@ This regards the manuscript &quot;{$submissionTitle},&quot; which is under consi
 <br />
 Following the review of the previous version of the manuscript, the authors have now submitted a revised version of their paper. We would appreciate it if you could help evaluate it.<br />
 <br />
-Please log into the journal web site by {$weekLaterDate} to indicate whether you will undertake the review or not, as well as to access the submission and to record your review and recommendation.<br />
+Please log into the journal web site by {$responseDueDate} to indicate whether you will undertake the review or not, as well as to access the submission and to record your review and recommendation.<br />
 <br />
 The review itself is due {$reviewDueDate}.<br />
 <br />

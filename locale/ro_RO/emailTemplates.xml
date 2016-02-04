@@ -211,7 +211,7 @@ Vă mulțumim,<br />
 <br />
 Suntem încredințați că ați putea face evaluarea acestui manuscris intitulat &quot;{$submissionTitle}&quot;, care a fost trimis revistei {$contextName}. Abstractul propunerii este introdus mai jos și sperăm că veți accepta această misiune importantă.<br />
 <br />
-Vă rugăm să vă autentificați pe siteul revistei prin {$weekLaterDate} pentru a indica dacă veți face evaluarea sau nu. De asemenea, veți putea accesa propunerea și veți putea înregistra evaluarea precum și recomandările. Siteul web se află la <a href="{$contextUrl}">{$contextUrl}</a><br />
+Vă rugăm să vă autentificați pe siteul revistei prin {$responseDueDate} pentru a indica dacă veți face evaluarea sau nu. De asemenea, veți putea accesa propunerea și veți putea înregistra evaluarea precum și recomandările. Siteul web se află la <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 Evaluarea va trebui făcută până la data de {$reviewDueDate}.<br />
 <br />
@@ -236,7 +236,7 @@ Vă mulțumim pentru că luați în considerare această solicitare.<br />
 <br />
 Suntem încredințați că ați putea face evaluarea acestui manuscris intitulat &quot;{$submissionTitle},&quot; care a fost trimis revistei {$contextName}. Abstractul propunerii este introdus mai jos și sperăm că veți accepta această misiune importantă.<br />
 <br />
-Vă rugăm să vă autentificați pe siteul revistei prin {$weekLaterDate} pentru a indica dacă veți face evaluarea sau nu. De asemenea, veți putea accesa propunerea și veți putea înregistra evaluarea precum și recomandările.<br />
+Vă rugăm să vă autentificați pe siteul revistei prin {$responseDueDate} pentru a indica dacă veți face evaluarea sau nu. De asemenea, veți putea accesa propunerea și veți putea înregistra evaluarea precum și recomandările.<br />
 <br />
 Evaluarea va trebui făcută până la data de {$reviewDueDate}.<br />
 <br />
@@ -259,7 +259,7 @@ Vă mulțumim pentru că luați în considerare această solicitare.<br />
 <br />
 Suntem încredințați că ați putea face evaluarea acestui manuscris intitulat &quot;{$submissionTitle}&quot; și vă rugăm să acceptați această misiune importantă pentru noi. Îndrumările pentru evaluare sunt adăugate mai jos iar propunerea este atașată la acest email. Evaluarea propunerii împreună cu recomandarea ar trebui să-mi fie expediate până la {$reviewDueDate}.<br />
 <br />
-Indicați într-un email de răspuns până la data de {$weekLaterDate} dacă puteți și doriți să faceți evaluarea.<br />
+Indicați într-un email de răspuns până la data de {$responseDueDate} dacă puteți și doriți să faceți evaluarea.<br />
 <br />
 Vă mulțumim pentru că luați în considerare această solicitare.<br />
 <br />

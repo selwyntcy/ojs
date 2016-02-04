@@ -146,7 +146,7 @@
 <br />
 《{$contextName}》的編輯團隊相信您是投稿到本期刊之稿件〈{$submissionTitle}〉的最佳審查人選。該份稿件的摘要如下，而我們希望您會考慮進行這份對我們來說相當重要的一個工作。<br />
 <br />
-無論您是否接受審查工作與否，都請在{$weekLaterDate}之前登入這個期刊網站，同時檢閱這份稿件並且記錄您的審查意見和編輯建議。網站為：<a href="{$contextUrl}">{$contextUrl}</a><br />
+無論您是否接受審查工作與否，都請在{$responseDueDate}之前登入這個期刊網站，同時檢閱這份稿件並且記錄您的審查意見和編輯建議。網站為：<a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 請注意審查工作的期限為：{$reviewDueDate}。<br />
 <br />
@@ -172,7 +172,7 @@
 <br />
 《{$contextName}》的編輯團隊相信您是投稿到本期刊之稿件〈{$submissionTitle}〉的最佳審查人選。該份稿件的摘要如下，而我們希望您會考慮進行這份對我們來說相當重要的一個工作。<br />
 <br />
-無論您是否接受審查工作與否，都請在{$weekLaterDate}之前登入這個期刊網站，同時檢閱這份稿件並且記錄您的審查意見和編輯建議。網站為：<a href="{$contextUrl}">{$contextUrl}</a><br />
+無論您是否接受審查工作與否，都請在{$responseDueDate}之前登入這個期刊網站，同時檢閱這份稿件並且記錄您的審查意見和編輯建議。網站為：<a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 請注意審查工作的期限為：{$reviewDueDate}。<br />
 <br />
@@ -195,7 +195,7 @@
 <br />
 《{$contextName}》的編輯團隊相信您是投稿到本期刊之稿件〈{$submissionTitle}〉的最佳審查人選，而我們希望您會考慮進行這份對我們來說相當重要的一個工作。該份期刊的審查指引已經附列如下，而稿件隨附在這封電子郵件的附加檔案之中。如果您接受這份審查工作，麻煩您在{$reviewDueDate}之前，將您對這份稿件的審查意見書以及編輯建議寄給我們。<br />
 <br />
-無論您是否接受審查工作與否，都請在{$weekLaterDate}之內回覆此封電子郵件給我們，告知我們您是否願意進行這個審查工作。<br />
+無論您是否接受審查工作與否，都請在{$responseDueDate}之內回覆此封電子郵件給我們，告知我們您是否願意進行這個審查工作。<br />
 <br />
 非常感謝您考慮我們的邀請。<br />
 {$editorialContactSignature}<br />

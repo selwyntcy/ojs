@@ -145,7 +145,7 @@ Xin trân trọng cảm ơn,<br />
 <br />
 Tôi tin rằng quý vị sẽ là người phản biện xuất sắc đối với bản thảo bài viết, &quot;{$submissionTitle},&quot; nộp cho tạp chí {$contextName}. Tóm tắt của bài nộp được kèm ở cuối thư, hy vọng rằng quý vị sẽ cân nhắc nhận giúp cho công việc quan trọng này.<br />
 <br />
-Xin vui lòng đăng nhập vào website trước ngày {$weekLaterDate} để báo cho BBT biết liệu quý vị có nhận lời phản biện hay không, đồng thời truy cập vào bài nộp, ghi lại lời phản biện và đề xuất. Địa chỉ của website là <a href="{$contextUrl}">{$contextUrl}</a><br />
+Xin vui lòng đăng nhập vào website trước ngày {$responseDueDate} để báo cho BBT biết liệu quý vị có nhận lời phản biện hay không, đồng thời truy cập vào bài nộp, ghi lại lời phản biện và đề xuất. Địa chỉ của website là <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 Thời hạn phản biện là {$reviewDueDate}.<br />
 <br />
@@ -170,7 +170,7 @@ Cảm ơn vì đã xem xét đề nghị này.<br />
 <br />
 Tôi tin rằng quý vị sẽ là người phản biện xuất sắc đối với bản thảo bài viết, &quot;{$submissionTitle},&quot; nộp cho tạp chí {$contextName}. Tóm tắt của bài nộp được kèm ở cuối thư, hy vọng rằng quý vị sẽ cân nhắc nhận giúp cho công việc quan trọng này.<br />
 <br />
-Xin vui lòng đăng nhập vào website trước ngày {$weekLaterDate} để báo cho BBT biết liệu quý vị có nhận lời phản biện hay không, đồng thời truy cập vào bài nộp, ghi lại lời phản biện và đề xuất. Địa chỉ của website là <a href="{$contextUrl}">{$contextUrl}</a><br />
+Xin vui lòng đăng nhập vào website trước ngày {$responseDueDate} để báo cho BBT biết liệu quý vị có nhận lời phản biện hay không, đồng thời truy cập vào bài nộp, ghi lại lời phản biện và đề xuất. Địa chỉ của website là <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 Thời hạn phản biện là {$reviewDueDate}.<br />
 <br />
@@ -193,7 +193,7 @@ Cảm ơn vì đã xem xét đề nghị này.<br />
 <br />
 Tôi tin rằng quý vị sẽ là người phản biện xuất sắc đối với bản thảo bài viết, &quot;{$submissionTitle},&quot; và tôi xin đề nghị quý vị nhận giúp công việc quan trọng này. Bản Hướng dẫn Phản biện cho tạp chí này được gửi kèm sau đây và bài nộp được gửi trong file đính kèm. Xin gửi phản biện về bài nộp cùng với khuyến nghị của quý vị về cho tôi trước ngày {$reviewDueDate}.<br />
 <br />
-xin vui lòng khẳng định trong email hồi âm trước ngày {$weekLaterDate} liệu quý vị có thể và sẵn sàng phản biện bài viết hay không.<br />
+xin vui lòng khẳng định trong email hồi âm trước ngày {$responseDueDate} liệu quý vị có thể và sẵn sàng phản biện bài viết hay không.<br />
 <br />
 Cảm ơn quý vị đã xem xét đề nghị này.<br />
 <br />

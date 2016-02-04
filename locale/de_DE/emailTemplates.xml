@@ -207,7 +207,7 @@ Vielen Dank,<br />
 <br />
 aufgrund Ihrer Forschungsschwerpunkte wären Sie ein/e ausgezeichnete/r Gutachter/in für das Manuskript &quot;{$submissionTitle}&quot;, das zur Publikation in {$contextName} eingereicht worden ist. Weiter unten finden Sie eine Kurzfassung des Beitrags. Ich hoffe sehr, dass Sie sich bereitfinden können, uns mit Ihrer Stellungnahme zu unterstützen. Sie wären uns eine große Hilfe.<br />
 <br />
-Loggen Sie sich bitte bis zum {$weekLaterDate} auf der Webseite unserer Zeitschrift ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können gegebenenfalls auch Ihr Gutachten und Ihre Empfehlung dort abgeben. Die Webseite ist <a href="{$contextUrl}">{$contextUrl}</a>.<br />
+Loggen Sie sich bitte bis zum {$responseDueDate} auf der Webseite unserer Zeitschrift ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können gegebenenfalls auch Ihr Gutachten und Ihre Empfehlung dort abgeben. Die Webseite ist <a href="{$contextUrl}">{$contextUrl}</a>.<br />
 <br />
 Das Gutachten wäre fällig am {$reviewDueDate}.<br />
 <br />
@@ -232,7 +232,7 @@ In der Hoffnung auf eine positive Antwort,<br />
 <br />
 aufgrund Ihrer Forschungsschwerpunkte wären Sie ein/e ausgezeichnete/r Gutachter/in für das Manuskript &quot;{$submissionTitle}&quot;, das zur Publikation in {$contextName} eingereicht worden ist. Weiter unten finden Sie eine Kurzfassung des Beitrags. Ich hoffe sehr, dass Sie sich bereitfinden können, uns mit Ihrer Stellungnahme zu unterstützen. Sie wären uns eine große Hilfe.<br />
 <br />
-Loggen Sie sich bitte bis zum {$weekLaterDate} auf der Webseite unserer Zeitschrift ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können gegebenenfalls auch Ihr Gutachten und Ihre Empfehlung dort abgeben.<br />
+Loggen Sie sich bitte bis zum {$responseDueDate} auf der Webseite unserer Zeitschrift ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können gegebenenfalls auch Ihr Gutachten und Ihre Empfehlung dort abgeben.<br />
 <br />
 Das Gutachten wäre fällig am {$reviewDueDate}.<br />
 <br />
@@ -255,7 +255,7 @@ In der Hoffnung auf eine positive Antwort,<br />
 <br />
 aufgrund Ihrer Forschungsschwerpunkte wären Sie ein/e ausgezeichnete/r Gutachter/in für das Manuskript &quot;{$submissionTitle}&quot;. Ich hoffe sehr, dass Sie sich bereitfinden können, uns mit Ihrer Stellungnahme zu unterstützen. Sie wären uns eine große Hilfe. Die Richtlinien für die Begutachtung sind angefügt, ebenso der Beitrag, um den es geht. Ihr Gutachten und Ihre Empfehlung sollten gegebenenfalls bis zum {$reviewDueDate} per E-Mail bei uns eingehen.<br />
 <br />
-Bitte benachrichtigen Sie uns bis zum {$weekLaterDate} per E-Mail, ob Sie das Gutachten übernehmen können.<br />
+Bitte benachrichtigen Sie uns bis zum {$responseDueDate} per E-Mail, ob Sie das Gutachten übernehmen können.<br />
 <br />
 In der Hoffnung auf eine positive Antwort,<br />
 <br />
@@ -276,7 +276,7 @@ diese E-Mail betrifft das Manuskript &quot;{$submissionTitle}&quot;, das bei {$c
 <br />
 Nach der Begutachtung der früheren Fassung des Manuskripts haben die Autor/innen nun eine überarbeitete Fassung ihres Artikels eingereicht. Wir würden uns freuen, wenn Sie bei der Beurteilung helfen könnten.<br />
 <br />
-Bitte loggen Sie sich auf der Website der Zeitschrift bis zum {$weekLaterDate} ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können auch Ihr Gutachten und Ihre Empfehlung dort abgeben. Die Adresse ist <a href="{$contextUrl}">{$contextUrl}</a>.<br />
+Bitte loggen Sie sich auf der Website der Zeitschrift bis zum {$responseDueDate} ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können auch Ihr Gutachten und Ihre Empfehlung dort abgeben. Die Adresse ist <a href="{$contextUrl}">{$contextUrl}</a>.<br />
 <br />
 Das Gutachten selbst wäre fällig am {$reviewDueDate}.<br />
 <br />
@@ -303,7 +303,7 @@ diese E-Mail betrifft das Manuskript &quot;{$submissionTitle}&quot;, das bei {$c
 <br />
 Nach der Begutachtung der früheren Fassung des Manuskripts haben die Autor/innen nun eine überarbeitete Fassung ihres Artikels eingereicht. Wir würden uns freuen, wenn Sie bei der Beurteilung helfen könnten.<br />
 <br />
-Bitte loggen Sie sich auf der Website der Zeitschrift bis zum {$weekLaterDate} ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können auch Ihr Gutachten und Ihre Empfehlung dort abgeben.<br />
+Bitte loggen Sie sich auf der Website der Zeitschrift bis zum {$responseDueDate} ein, um uns Ihre Zu- oder Absage mitzuteilen. Sie finden dort den Beitrag und können auch Ihr Gutachten und Ihre Empfehlung dort abgeben.<br />
 <br />
 Das Gutachten selbst wäre fällig zum {$reviewDueDate}.<br />
 <br />
@@ -330,7 +330,7 @@ Nach der Begutachtung der früheren Fassung des Manuskripts haben die Autor/inne
 <br />
 Die Begutachtungsrichtlinien dieser Zeitschrift sind unten angehängt, und der Beitrag selber ist dieser E-Mail beigefügt. Ihr Gutachten zu diesem Beitrag sollte zusammen mit Ihrer Empfehlung mir per E-Mail bis zum {$reviewDueDate} zugehen.<br />
 <br />
-Bitte teilen Sie uns in einer E-Mail bis zum {$weekLaterDate} mit, ob Sie das Gutachten übernehmen können.<br />
+Bitte teilen Sie uns in einer E-Mail bis zum {$responseDueDate} mit, ob Sie das Gutachten übernehmen können.<br />
 <br />
 In der Hoffnung auf eine positive Antwort,<br />
 <br />

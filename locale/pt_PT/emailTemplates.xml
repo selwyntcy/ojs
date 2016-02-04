@@ -248,7 +248,7 @@ Agradecendo desde já a sua atenção,<br />
 <br />
 Acreditamos que o seu conhecimento será fundamental para realizar a revisão do manuscrito &quot;{$submissionTitle}&quot; submetido a {$contextName}. Informações sobre a submissão encontram-se nesta mensagem, e espero que considere assumir esta importante responsabilidade.<br />
 <br />
-Aceda ao sistema até {$weekLaterDate} para confirmar a sua disponibilidade ou não para realizar a revisão, bem como aceder aos dados completos da submissão e registar a sua revisão e recomendações, através do URL <a href="{$contextUrl}">{$contextUrl}</a>.<br />
+Aceda ao sistema até {$responseDueDate} para confirmar a sua disponibilidade ou não para realizar a revisão, bem como aceder aos dados completos da submissão e registar a sua revisão e recomendações, através do URL <a href="{$contextUrl}">{$contextUrl}</a>.<br />
 <br />
 O prazo para a entrega da revisão é {$reviewDueDate}.<br />
 <br />
@@ -278,7 +278,7 @@ Resumo<br />
 <br />
 Acreditamos que o seu conhecimento será fundamental para realizar a revisão do manuscrito &quot;{$submissionTitle}&quot; submetido a {$contextName}. Informações sobre a submissão encontram-se abaixo, e espero que considere assumir esta importante responsabilidade.<br />
 <br />
-Aceda ao sistema até {$weekLaterDate} para confirmar a sua disponibilidade ou não para realizar a revisão, bem como aceder aos dados completos da submissão e registar a sua revisão e recomendações, através do URL <a href="{$contextUrl}">{$contextUrl}</a>.<br />
+Aceda ao sistema até {$responseDueDate} para confirmar a sua disponibilidade ou não para realizar a revisão, bem como aceder aos dados completos da submissão e registar a sua revisão e recomendações, através do URL <a href="{$contextUrl}">{$contextUrl}</a>.<br />
 <br />
 O prazo para a entrega da revisão é {$reviewDueDate}.<br />
 <br />
@@ -314,7 +314,7 @@ O prazo para entrega da revisão e as suas recomendações, enviadas para este e
 <br />
 Espero que considere assumir esta importante responsabilidade.<br />
 <br />
-Responda a esta mensagem até {$weekLaterDate} para informar se estará disponível ou não para realizar a revisão.<br />
+Responda a esta mensagem até {$responseDueDate} para informar se estará disponível ou não para realizar a revisão.<br />
 <br />
 Agradecemos desde já a sua atenção.<br />
 <br />

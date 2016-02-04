@@ -218,7 +218,7 @@ Terima kasih,<br />
 Saya yakin Anda dapat menjadi reviewer handal manuskrip, &quot;{$submissionTitle},&quot; yang telah diserahkan ke {$contextName}. Abstrak naskah disertakan di bawah ini, dan saya harap Anda mempertimbangkan untuk mengambil tugas penting ini untuk kami. <br />
 <br />
 <br />
-Mohon login ke web site jurnal sebelum tanggal {$weekLaterDate} untuk menunjukkan apakah Anda akan mengambil Review ini atau tidak, serta untuk mengakses naskah dan mencatat Review dan rekomendasi Anda. Web sitenya adalah <a href="{$contextUrl}">{$contextUrl}</a><br />
+Mohon login ke web site jurnal sebelum tanggal {$responseDueDate} untuk menunjukkan apakah Anda akan mengambil Review ini atau tidak, serta untuk mengakses naskah dan mencatat Review dan rekomendasi Anda. Web sitenya adalah <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 Review jatuh tempo tanggal {$reviewDueDate}.<br />
 <br />
@@ -245,7 +245,7 @@ Terima kasih untuk mempertimbangkan permintaan ini.<br />
 <br />
 Saya yakin Anda akan berperan sebagai Reviewer handal manuskrip, &quot;{$submissionTitle},&quot; yang telah diserahkan ke {$contextName}. Abstrak naskah disertakan di bawah ini, dan saya harap Anda akan mempertimbangkan untuk mengambil tugas penting ini untuk kami.<br />
 <br />
-Login ke web site jurnal sebelum tanggal {$weekLaterDate} untuk menunjukkan apakah Anda akan mengambil review atau tidak, serta untuk mengakses naskah dan mencatat review dan rekomendasi Anda.<br />
+Login ke web site jurnal sebelum tanggal {$responseDueDate} untuk menunjukkan apakah Anda akan mengambil review atau tidak, serta untuk mengakses naskah dan mencatat review dan rekomendasi Anda.<br />
 <br />
 Review jatuh tempo sebelum tanggal {$reviewDueDate}.<br />
 <br />
@@ -268,7 +268,7 @@ Terima kasih untuk mempertimbangkan permintaan ini.<br />
 <br />
 Saya yakin Anda akan berperan sebagai Reviewer handal manuskrip, &quot;{$submissionTitle},&quot; dan saya meminta Anda untuk mempertimbangkan tugas penting ini untuk kami. Petunjuk Review untuk jurnal ini dilampirkan di bawah ini, dan naskah dilampirkan di email ini. Review naskah, beserta rekomendasi Anda harus diemail ke saya sebelum tanggal {$reviewDueDate}.<br />
 <br />
-Mohon tunjukkan di email balasan sebelum {$weekLaterDate} apakah Anda bisa atau bersedia melakukan review.<br />
+Mohon tunjukkan di email balasan sebelum {$responseDueDate} apakah Anda bisa atau bersedia melakukan review.<br />
 <br />
 Terima kasih untuk mempertimbangkan permintaan ini.<br />
 <br />

@@ -177,7 +177,7 @@ Grazie,<br />
 <br />
 Ti propongo la revisione del manoscritto &quot;{$submissionTitle},&quot; che è stato proposto a {$contextName}. L'abstract della submission  è inserito qui sotto. Spero che vorrai prendere in carico questo compito.<br />
 <br />
-Ti chiedo quindi di effettuare il log in al sito web della rivista entro il {$weekLaterDate} per indicare se prenderai in carico la revisione o meno.<br />
+Ti chiedo quindi di effettuare il log in al sito web della rivista entro il {$responseDueDate} per indicare se prenderai in carico la revisione o meno.<br />
 Potrai poi accedere alla submission e inviare il tuo parere. Il sito web è <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 La data di scadenza per la revisione è fissata al {$reviewDueDate}.<br />
@@ -204,7 +204,7 @@ Abstract<br />
 <br />
 Ti propongo la revisione del manoscritto &quot;{$submissionTitle},&quot; che è stato inviato a {$contextName}. L'abstract della proposta è più sotto. Spero che vorrai prendere in carico questo compito.<br />
 <br />
-Ti chiedo quindi di effettuare il log in al sito web della rivista entro il {$weekLaterDate} per indicare se prenderai in carico la revisione o meno. Potrai poi accedere alla submission e inviare il tuo parere.<br />
+Ti chiedo quindi di effettuare il log in al sito web della rivista entro il {$responseDueDate} per indicare se prenderai in carico la revisione o meno. Potrai poi accedere alla submission e inviare il tuo parere.<br />
 <br />
 La data di scadenza per la revisione è fissata al {$reviewDueDate}.<br />
 <br />
@@ -231,7 +231,7 @@ Le linee guida per la revisione sono indicate sotto e il file della submission �
 <br />
 Puoi comunicarmi il tuo parere per posta elettronica entro il {$reviewDueDate}.<br />
 <br />
-Ti chiedo di farmi sapere entro il {$weekLaterDate} e accetti o meno l'incarico di revisione.<br />
+Ti chiedo di farmi sapere entro il {$responseDueDate} e accetti o meno l'incarico di revisione.<br />
 <br />
 Grazie per la tua collaborazione<br />
 <br />
@@ -953,7 +953,7 @@ ti scrivo riguardo alla proposta &quot;{$submissionTitle},&quot; che è in revis
 <br />
 Seguendo i suggerimenti emersi in precedenza, l'autore ha modificato il manoscritto e inviato una nuova versione. Ti sarei grato se volessi aiutarci a valutarla.<br />
 <br />
-Ti prego quindi di accedere al sito entro il {$weekLaterDate} per comunicare se ti incaricherai o meno della revisione e poi per accedere alla proposta e registrare il tuo parere. Il sito è <a href="{$contextUrl}">{$contextUrl}</a><br />
+Ti prego quindi di accedere al sito entro il {$responseDueDate} per comunicare se ti incaricherai o meno della revisione e poi per accedere alla proposta e registrare il tuo parere. Il sito è <a href="{$contextUrl}">{$contextUrl}</a><br />
 <br />
 La data di scadenza per l'incarico di revisione è il {$reviewDueDate}.<br />
 <br />
@@ -980,7 +980,7 @@ Ti scrivo riguardo al manoscritto &quot;{$submissionTitle},&quot; in corso di re
 <br />
 L'autore ha inviato una nuova versione, modificata secondo i suggerimenti ricevuti dai revisori. Tu sarei grato se volessi aiutarci a valutarla.<br />
 <br />
-Ti chiedo di autenticarti al sito {$weekLaterDate} per indicarmi se intendi accettare l'incarico o meno e poi per accedere alla proposta e registrare il tuo parere.<br />
+Ti chiedo di autenticarti al sito {$responseDueDate} per indicarmi se intendi accettare l'incarico o meno e poi per accedere alla proposta e registrare il tuo parere.<br />
 <br />
 La data di scadenza è il {$reviewDueDate}.<br />
 <br />
@@ -1007,7 +1007,7 @@ Seguendo i suggerimenti ricevuti dai revisori, lautore ha inviato una nuova vers
 <br />
 Più sotto trovi le Linee guida sulla revisione e il file del manoscritto è in allegato. Puoi inviarmi la revisione e il tuo parere sulla proposta via email, entro il  {$reviewDueDate}.<br />
 <br />
-Perfavore informami entro il {$weekLaterDate} se accetti o meno l'incarico.<br />
+Perfavore informami entro il {$responseDueDate} se accetti o meno l'incarico.<br />
 <br />
 Grazie della disponibilià<br />
 {$editorialContactSignature}<br />
