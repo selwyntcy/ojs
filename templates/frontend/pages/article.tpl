@@ -16,7 +16,7 @@
 
 <div class="page page_article">
 	{if $section}
-		{include file="frontend/components/breadcrumbs_article.tpl" currentTitle=$section->getLocalizedTitle()|escape}
+		{include file="frontend/components/breadcrumbs_article.tpl" currentTitle=$section->getLocalizedTitle()}
 	{else}
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitleKey="article.article"}
 	{/if}
@@ -35,11 +35,6 @@
 	{else}
 		{* Show article overview *}
 		{include file="frontend/objects/article_details.tpl"}
-
-		{* Display a legend describing the open/restricted access icons *}
-		{if $article->getGalleys()}
-			{include file="frontend/components/accessLegend.tpl"}
-		{/if}
 	{/if}
 
 	{* Copyright and licensing *}
@@ -57,9 +52,6 @@
 	{/if}
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
-	{if $pageFooter}
-		{$pageFooter}
-	{/if}
 
 </div><!-- .page -->
 

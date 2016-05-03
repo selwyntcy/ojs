@@ -42,7 +42,6 @@
 		<form id="importXmlForm" class="pkp_form" action="{plugin_url path="importBounce"}" method="post">
 			{fbvFormArea id="importForm"}
 				{* Container for uploaded file *}
-				<input type="hidden" name="temporaryFileId" id="temporaryFileId" value="" />
 				<p>{translate key="plugins.importexport.users.import.instructions"}</p>
 
 				<input type="hidden" name="temporaryFileId" id="temporaryFileId" value="" />
@@ -52,7 +51,7 @@
 					{/fbvFormSection}
 				{/fbvFormArea}
 
-				{fbvFormButtons hideCancel="true"}
+				{fbvFormButtons submitText="plugins.importexport.users.import.importUsers" hideCancel="true"}
 			{/fbvFormArea}
 		</form>
 	</div>
@@ -67,7 +66,7 @@
 			{fbvFormArea id="exportForm"}
 				{url|assign:usersGridUrl router=$smarty.const.ROUTE_COMPONENT component="grid.users.exportableUsers.ExportableUsersGridHandler" pluginName="UserImportExportPlugin" op="fetchGrid" escape=false}
 				{load_url_in_div id="usersGridContainer" url=$usersGridUrl}
-				{fbvFormButtons hideCancel="true"}
+				{fbvFormButtons submitText="plugins.importexport.users.export.exportUsers" hideCancel="true"}
 			{/fbvFormArea}
 		</form>
 	</div>

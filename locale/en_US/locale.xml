@@ -137,8 +137,6 @@
 	<message key="article.fontSize.medium.altText">Medium</message>
 	<message key="article.fontSize.large.altText">Large</message>
 	<message key="article.return">Return to Article Details</message>
-	<message key="article.publishedIn">Published in {$issueLink}.</message>
-	<message key="article.publishedInWithSection">Published in the {$sectionTitle} section in {$issueLink}.</message>
 
 	<!-- Submission Tracking - Common -->
 	<message key="submission.submissionEditing">Submission Editing</message>
@@ -401,9 +399,6 @@ Authors who publish with this journal agree to the following terms:
 	 <li>Authors are able to enter into separate, additional contractual arrangements for the non-exclusive distribution of the journal's published version of the work (e.g., post it to an institutional repository or publish it in a book), with an acknowledgement of its initial publication in this journal.</li>
 	 <li>Authors are permitted and encouraged to post their work online (e.g., in institutional repositories or on their website) prior to and during the submission process, as it can lead to productive exchanges, as well as earlier and greater citation of published work (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html"> The Effect of Open Access</a>).</li>
 </ol>]]></message>
-	<message key="manager.setup.registerForIndexingDescription"><![CDATA[To have the contents of this journal indexed within a globally distributed system of research databases, please read <a href="http://www.oclc.org/oaister/contribute.en.html" target="_blank">the steps to becoming a data contributor</a> and register your journal with the official <a href="http://www.openarchives.org/data/registerasprovider.html" target="_blank">Open Archives registry</a>.  To register, you will need the base URL for your repository: <span class="highlight">{$oaiUrl}</span>.  Afterwards, you can register your journal at the <a href="http://gita.grainger.uiuc.edu/registry/" target="_blank">UIUC OAI registry</a> and <a href="http://www.oclc.org/oaister" target="_blank">OAIster</a>.
-<br /><br />
-Note that if your site administrator has already registered this site with these services, your journal will be indexed automatically and you do not need to register your journal.]]></message>
 	<message key="manager.setup.citations.enable">Enable the Citation Markup Assistant</message>
 
 	<!-- Setup Step 4 -->
@@ -532,6 +527,8 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<message key="layoutEditor.galley.uploadSuppFile">Upload supplementary file</message>
 	<message key="submission.layout.imageInvalid">Invalid image format. Accepted formats are .gif, .jpg, and .png.</message>
 	<message key="submission.layout.galleyType">Galley Type</message>
+	<message key="submission.layout.galley.remotelyHostedContent">This galley will be available at a separate website.</message>
+	<message key="submission.layout.galley.remoteURL">URL of remotely-hosted content</message>
 
 	<!-- Reviewer -->
 	<message key="reviewer.pendingReviews">Articles Pending Review</message>
@@ -580,6 +577,7 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<message key="reviewer.article.enterReviewA">Click on icon to enter (or paste) your review of this submission.</message>
 	<message key="reviewer.article.uploadFile">In addition, you can upload files for the editor and/or author to consult.</message>
 	<message key="reviewer.article.selectRecommendation">Select a recommendation and submit the review to complete the process. You must enter a review or upload a file before selecting a recommendation.</message>
+	<message key="reviewer.article.selectRecommendation.byEditor">Set or adjust the reviewer recommendation.</message>
 	<message key="reviewer.article.mustSelectDecision">No recommendation was selected. You must choose a recommendation to submit.</message>
 	<message key="reviewer.article.confirmDecision">Once you have recorded a decision you will no longer be able to make changes to this review. Are you sure you wish to continue?</message>
 	<message key="reviewer.article.ensuringBlindReview">Ensuring a Blind Review</message>
@@ -1149,4 +1147,8 @@ Validation may fail on search URLs that require posted form data.]]></message>
 	<message key="grid.catalogEntry.approvedRepresentation.title">Galley Approval</message>
 	<message key="grid.catalogEntry.approvedRepresentation.message"><![CDATA[<p>Approve this galley for publication.</p>]]></message>
 	<message key="grid.catalogEntry.approvedRepresentation.removeMessage"><![CDATA[<p>Remove approval of this galley.</p>]]></message>
+	<message key="search.cli.rebuildIndex.indexing">Indexing "{$journalName}"</message>
+	<message key="search.cli.rebuildIndex.indexingByJournalNotSupported">This search implementation does not allow per-journ
+al re-indexing.</message>
+	<message key="search.cli.rebuildIndex.unknownJournal">The given journal path "{$journalPath}" could not be resolved to a journal.</message>
 </locale>

@@ -13,12 +13,10 @@
 
 	<div class="pkp_context_sidebar">
 		{include file="controllers/tab/workflow/stageParticipants.tpl"}
+		{help file="chapter_9_production.md"}
 	</div>
 
 	<div class="pkp_content_panel">
-
-		<p class="pkp_help">{translate key="editor.submission.production.introduction"}</p>
-
 		{url|assign:productionReadyFilesGridUrl router=$smarty.const.ROUTE_COMPONENT component="grid.files.productionReady.ProductionReadyFilesGridHandler" op="fetchGrid" submissionId=$submission->getId() stageId=$stageId escape=false}
 		{load_url_in_div id="productionReadyFilesGridDiv" url=$productionReadyFilesGridUrl}
 

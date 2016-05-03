@@ -65,6 +65,7 @@
 <script src="{$baseUrl}/lib/pkp/js/controllers/RangeSliderHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/RevealMoreHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/NotificationHandler.js"></script>
+<script src="{$baseUrl}/lib/pkp/js/controllers/HelpPanelHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/FormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/DropdownHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/form/AjaxFormHandler.js"></script>
@@ -97,6 +98,7 @@
 <script src="{$baseUrl}/lib/pkp/js/controllers/wizard/fileUpload/form/FileUploadFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/wizard/fileUpload/form/RevisionConfirmationHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/filter/form/FilterFormHandler.js"></script>
+<script src="{$baseUrl}/lib/pkp/js/controllers/grid/representations/form/RepresentationFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/settings/user/form/UserDetailsFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/settings/roles/form/UserGroupFormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/settings/metadata/MetadataGridHandler.js"></script>
@@ -120,7 +122,6 @@
 <script src="{$baseUrl}/lib/pkp/js/pages/submission/SubmissionStep3FormHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/pages/workflow/WorkflowHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/pages/workflow/SubmissionHeaderHandler.js"></script>
-<script src="{$baseUrl}/lib/pkp/js/pages/workflow/EditorDecisionsHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/AdvancedReviewerSearchHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/ReadReviewHandler.js"></script>
 <script src="{$baseUrl}/lib/pkp/js/controllers/grid/users/reviewer/form/EditReviewFormHandler.js"></script>
