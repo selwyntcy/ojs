@@ -48,6 +48,14 @@ class TemplateManager extends PKPTemplateManager {
 
 			$this->assign('siteCategoriesEnabled', $site->getSetting('categoriesEnabled'));
 
+			// Get a count of unread tasks.
+			if ($user = $request->getUser()) {
+				$notificationDao = DAORegistry::getDAO('NotificationDAO');
+				// Exclude certain tasks, defined in the notifications grid handler
+				import('lib.pkp.controllers.grid.notifications.TaskNotificationsGridHandler');
+				$this->assign('unreadNotificationCount', $notificationDao->getNotificationCount(false, $user->getId(), null, NOTIFICATION_LEVEL_TASK));
+			}
+
 			if (isset($context)) {
 
 				$this->assign('currentJournal', $context);
@@ -80,7 +88,6 @@ class TemplateManager extends PKPTemplateManager {
 				// This allows us to reduce template duplication by using this
 				// variable in templates/common/header.tpl, instead of
 				// reproducing a lot of OMP/OJS-specific logic there.
-				$router = $request->getRouter();
 				$dispatcher = $request->getDispatcher();
 				$this->assign( 'contextSettingsUrl', $dispatcher->url($request, ROUTE_PAGE, null, 'management', 'settings', 'journal') );
 
