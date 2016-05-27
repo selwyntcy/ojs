@@ -46,8 +46,6 @@ class TemplateManager extends PKPTemplateManager {
 			$siteStyleFilename = $publicFileManager->getSiteFilesPath() . '/' . $site->getSiteStyleFilename();
 			if (file_exists($siteStyleFilename)) $this->addStyleSheet($request->getBaseUrl() . '/' . $siteStyleFilename, STYLE_SEQUENCE_LAST);
 
-			$this->assign('siteCategoriesEnabled', $site->getSetting('categoriesEnabled'));
-
 			// Get a count of unread tasks.
 			if ($user = $request->getUser()) {
 				$notificationDao = DAORegistry::getDAO('NotificationDAO');
@@ -55,7 +53,6 @@ class TemplateManager extends PKPTemplateManager {
 				import('lib.pkp.controllers.grid.notifications.TaskNotificationsGridHandler');
 				$this->assign('unreadNotificationCount', $notificationDao->getNotificationCount(false, $user->getId(), null, NOTIFICATION_LEVEL_TASK));
 			}
-
 			if (isset($context)) {
 
 				$this->assign('currentJournal', $context);
@@ -63,7 +60,7 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign('publicFilesDir', $request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($context->getId()));
 
 				$this->assign('primaryLocale', $context->getPrimaryLocale());
-				$this->assign('alternateLocales', $context->getSetting('alternateLocales'));
+				$this->assign('supportedLocales', $context->getSupportedLocaleNames());
 
 				// Assign page header
 				$this->assign('displayPageHeaderTitle', $context->getLocalizedPageHeaderTitle());
@@ -103,6 +100,7 @@ class TemplateManager extends PKPTemplateManager {
 
 				$this->assign('siteTitle', $site->getLocalizedTitle());
 				$this->assign('primaryLocale', $site->getPrimaryLocale());
+				$this->assign('supportedLocales', $site->getSupportedLocaleNames());
 			}
 		}
 	}
