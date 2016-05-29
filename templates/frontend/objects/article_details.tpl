@@ -65,12 +65,12 @@
  *}
 <article class="obj_article_details">
 	<h1 class="page_title">
-		{$article->getLocalizedTitle()|escape}
+		{$article->getLocalizedTitle()|strip_unsafe_html}
 	</h1>
 
 	{if $article->getLocalizedSubtitle()}
 		<h2 class="subtitle">
-			{$article->getLocalizedSubtitle()|escape}
+			{$article->getLocalizedSubtitle()|strip_unsafe_html}
 		</h2>
 	{/if}
 
@@ -97,7 +97,7 @@
 			{if $article->getLocalizedAbstract()}
 				<div class="item abstract">
 					<h3 class="label">{translate key="article.abstract"}</h3>
-					{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}
+					{$article->getLocalizedAbstract()|strip_unsafe_html}
 				</div>
 			{/if}
 
