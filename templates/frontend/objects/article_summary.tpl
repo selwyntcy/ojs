@@ -46,6 +46,17 @@
 				{$article->getPages()|escape}
 			</div>
 		{/if}
+
+		{if $showDatePublished && $article->getDatePublished()}
+			<div class="published">
+				<div class="label">
+					{translate key="submissions.published"}
+				</div>
+				<div class="value">
+					{$article->getDatePublished()|date_format}
+				</div>
+			</div>
+		{/if}
 	</div>
 	{/if}
 

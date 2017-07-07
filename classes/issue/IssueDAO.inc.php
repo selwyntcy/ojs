@@ -590,11 +590,12 @@ class IssueDAO extends DAO {
 	 * Get published issues organized by published date
 	 * @param $journalId int
 	 * @param $rangeInfo object DBResultRange
+	 * @param $withoutCurrent boolean optional
 	 * @return ItemIterator
 	 */
-	function getPublishedIssues($journalId, $rangeInfo = null) {
+	function getPublishedIssues($journalId, $rangeInfo = null, $withoutCurrent = false) {
 		$result = $this->retrieveRange(
-			'SELECT i.* FROM issues i LEFT JOIN custom_issue_orders o ON (o.issue_id = i.issue_id) WHERE i.journal_id = ? AND i.published = 1 ORDER BY o.seq ASC, i.current DESC, i.date_published DESC',
+			'SELECT i.* FROM issues i LEFT JOIN custom_issue_orders o ON (o.issue_id = i.issue_id) WHERE i.journal_id = ? AND i.published = 1 ' . (($withoutCurrent) ? 'AND i.current = 0 ' : '') . 'ORDER BY o.seq ASC, i.current DESC, i.date_published DESC',
 			(int) $journalId, $rangeInfo
 		);
 

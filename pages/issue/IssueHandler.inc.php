@@ -141,7 +141,7 @@ class IssueHandler extends Handler {
 
 		$rangeInfo = $this->getRangeInfo($request, 'issues');
 		$issueDao = DAORegistry::getDAO('IssueDAO');
-		$publishedIssuesIterator = $issueDao->getPublishedIssues($journal->getId(), $rangeInfo);
+		$publishedIssuesIterator = $issueDao->getPublishedIssues($journal->getId(), $rangeInfo, true);
 		$templateMgr->assign('issues', $publishedIssuesIterator);
 		$templateMgr->display('frontend/pages/issueArchive.tpl');
 	}

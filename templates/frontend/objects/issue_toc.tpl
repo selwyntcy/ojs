@@ -57,7 +57,7 @@
 			<ul class="articles">
 				{foreach from=$section.articles item=article}
 					<li>
-						{include file="frontend/objects/article_summary.tpl"}
+						{include file="frontend/objects/article_summary.tpl" showDatePublished=true}
 					</li>
 				{/foreach}
 			</ul>
