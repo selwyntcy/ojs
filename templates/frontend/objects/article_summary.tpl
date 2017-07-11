@@ -10,18 +10,18 @@
  * @uses $article Article The article
  * @uses $hasAccess bool Can this user access galleys for this context? The
  *       context may be an issue or an article
- * @uses $showGalleyLinks bool Show galley links to users without access?
+ * @uses $showDatePublished bool Show the date this article was published?
  *}
-{assign var=articlePath value=$article->getBestArticleId($currentJournal)}
+{assign var=articlePath value=$article->getBestArticleId()}
 {if (!$section.hideAuthor && $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_DEFAULT) || $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_SHOW}
 	{assign var="showAuthor" value=true}
 {/if}
 
 <div class="obj_article_summary">
-	{if $article->getLocalizedFileName() && $article->getLocalizedShowCoverPage() && !$article->getHideCoverPageToc($locale)}
+	{if $article->getCoverImage()}
 		<div class="cover">
 			<a href="{url page="article" op="view" path=$articlePath}" class="file">
-				<img src="{$coverPagePath|escape}{$article->getFileName($locale)|escape}"{if $article->getCoverPageAltText($locale) != ''} alt="{$article->getCoverPageAltText($locale)|escape}"{else} alt="{translate key="article.coverPage.altText"}"{/if}>
+				<img src="{$coverImagePath|escape}{$article->getCoverImage()|escape}"{if $article->getCoverImageAltText() != ''} alt="{$article->getCoverImageAltText()|escape}"{else} alt="{translate key="article.coverPage.altText"}"{/if}>
 			</a>
 		</div>
 	{/if}
@@ -32,7 +32,7 @@
 		</a>
 	</div>
 
-	{if $showAuthor || $article->getPages()}
+	{if $showAuthor || $article->getPages() || ($article->getDatePublished() && $showDatePublished)}
 	<div class="meta">
 		{if $showAuthor}
 		<div class="authors">
@@ -57,10 +57,11 @@
 				</div>
 			</div>
 		{/if}
+
 	</div>
 	{/if}
 
-	{if $hasAccess || $showGalleyLinks}
+	{if $hasAccess}
 		<ul class="galleys_links">
 			{foreach from=$article->getGalleys() item=galley}
 				<li>

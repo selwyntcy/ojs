@@ -20,6 +20,7 @@
 </script>
 
 <form class="pkp_form" id="mastheadForm" method="post" action="{url router=$smarty.const.ROUTE_COMPONENT component="tab.settings.JournalSettingsTabHandler" op="saveFormData" tab="masthead"}">
+	{csrf}
 
 	{include file="controllers/tab/settings/wizardMode.tpl" wizardMode=$wizardMode}
 
@@ -39,8 +40,14 @@
 		{/fbvFormSection}
 	{/fbvFormArea}
 
+	{fbvFormArea id="mastheadPublisher"}
+		{fbvFormSection label="manager.setup.publisher" for="publisherInstitution" description="manager.setup.publisherDescription"}
+			{fbvElement type="text" name="publisherInstitution" id="publisherInstitution" value=$publisherInstitution maxlength="255"}
+		{/fbvFormSection}
+	{/fbvFormArea}
+
 	{fbvFormArea id="mastheadISSNContainer"}
-		{fbvFormSection label="manager.setup.Issn" for="onlineIssn" description="manager.setup.issnDescription"}
+		{fbvFormSection label="manager.setup.Issn" for="onlineIssn"}
 			{fbvElement type="text" name="onlineIssn" id="onlineIssn" value=$onlineIssn label="manager.setup.onlineIssn" size=$fbvStyles.size.SMALL inline=true}
 			{fbvElement type="text" name="printIssn" id="printIssn" value=$printIssn label="manager.setup.printIssn" size=$fbvStyles.size.SMALL inline=true}
 		{/fbvFormSection}

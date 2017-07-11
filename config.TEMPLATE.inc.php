@@ -109,7 +109,7 @@ show_upgrade_warning = On
 
 ; Set the following parameter to off if you want to work with the uncompiled (non-minified) JavaScript
 ; source for debugging or if you are working off a development branch without compiled JavaScript.
-enable_minified = Off
+enable_minified = On
 
 ; Provide a unique site ID and OAI base URL to PKP for statistics and security
 ; alert purposes only.
@@ -412,12 +412,6 @@ recaptcha_private_key = your_private_key
 
 ; Whether or not to use Captcha on user registration
 captcha_on_register = on
-
-; Whether or not to use Captcha on user comments
-captcha_on_comments = on
-
-; Whether or not to use Captcha on notification mailing list registration
-captcha_on_mailinglist = on
 
 
 ;;;;;;;;;;;;;;;;;;;;;

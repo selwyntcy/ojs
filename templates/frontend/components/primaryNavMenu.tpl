@@ -32,18 +32,16 @@
 			</li>
 		{/if}
 
-		<li class="has_submenu">
+		<li aria-haspopup="true" aria-expanded="false">
 			<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
 				{translate key="navigation.about"}
 			</a>
 			<ul>
-				{if $currentJournal->getLocalizedSetting('aboutJournal')}
-					<li>
-						<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
-							{translate key="about.aboutContext"}
-						</a>
-					</li>
-				{/if}
+				<li>
+					<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
+						{translate key="about.aboutContext"}
+					</a>
+				</li>
 				{if $currentJournal->getLocalizedSetting('masthead')}
 					<li>
 						<a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">

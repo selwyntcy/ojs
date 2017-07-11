@@ -21,24 +21,15 @@
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitleKey="article.article"}
 	{/if}
 
-	{if $galley}
-		<h1 class="page_title">{$article->getLocalizedTitle()|escape}</h1>
+	{* Show article overview *}
+	{include file="frontend/objects/article_details.tpl"}
 
-		{translate key="article.view.interstitial" galleyUrl=$fileUrl}
-		<ul class="galleys_links">
-			{foreach from=$galley->getLatestGalleyFiles() item=galleyFile}
-				<li>
-                    <a class="obj_galley_link" href="{url op="download" path=$article->getBestArticleId($currentJournal)|to_array:$galley->getBestGalleyId($currentJournal):$galleyFile->getFileId() escape=false}">{$galleyFile->getLocalizedName()|escape}</a>
-                </li>
-			{/foreach}
-		</ul>
-	{else}
-		{* Show article overview *}
-		{include file="frontend/objects/article_details.tpl"}
-	{/if}
+	{* Display Dublin Core metadata *}
+	{include file="frontend/objects/article_dublinCore.tpl" article=$article}
+	{include file="frontend/objects/article_googleScholar.tpl" article=$article}
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
 
 </div><!-- .page -->
 
-{include file="common/frontend/footer.tpl"}
+{include file="frontend/components/footer.tpl"}

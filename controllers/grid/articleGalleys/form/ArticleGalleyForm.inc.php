@@ -37,6 +37,7 @@ class ArticleGalleyForm extends Form {
 
 		$this->addCheck(new FormValidator($this, 'label', 'required', 'editor.issues.galleyLabelRequired'));
 		$this->addCheck(new FormValidatorPost($this));
+		$this->addCheck(new FormValidatorCSRF($this));
 
 		// Ensure a locale is provided and valid
 		$journal = $request->getJournal();
@@ -68,28 +69,10 @@ class ArticleGalleyForm extends Form {
 		));
 		$templateMgr->assign(array(
 			'supportedLocales' => $journal->getSupportedLocaleNames(),
-			'enablePublicGalleyId' => $journal->getSetting('enablePublicGalleyId'),
 			'submissionId' => $this->_submission->getId(),
 		));
 
 		return parent::fetch($request);
-	}
-
-	/**
-	 * Validate the form
-	 */
-	function validate($request) {
-		// Check if public galley ID is already being used
-		$journal = $request->getJournal();
-		$articleGalleyDao = DAORegistry::getDAO('ArticleGalleyDAO'); /* @var $journalDao JournalDAO */
-
-		$publicGalleyId = $this->getData('publicGalleyId');
-		if ($publicGalleyId && $articleGalleyDao->pubIdExists('publisher-id', $publicGalleyId, $this->_articleGalley?$this->_articleGalley->getId():null, $journal->getId())) {
-			$this->addError('publicGalleyId', __('editor.publicIdentificationExists', array('publicIdentifier' => $publicGalleyId)));
-			$this->addErrorField('publicGalleyId');
-		}
-
-		return parent::validate();
 	}
 
 	/**
@@ -99,7 +82,6 @@ class ArticleGalleyForm extends Form {
 		if ($this->_articleGalley) {
 			$this->_data = array(
 				'label' => $this->_articleGalley->getLabel(),
-				'publicGalleyId' => $this->_articleGalley->getStoredPubId('publisher-id'),
 				'galleyLocale' => $this->_articleGalley->getLocale(),
 				'remoteURL' => $this->_articleGalley->getRemoteURL(),
 			);
@@ -115,7 +97,6 @@ class ArticleGalleyForm extends Form {
 		$this->readUserVars(
 			array(
 				'label',
-				'publicGalleyId',
 				'galleyLocale',
 				'remoteURL',
 			)
@@ -136,9 +117,6 @@ class ArticleGalleyForm extends Form {
 
 		if ($articleGalley) {
 			$articleGalley->setLabel($this->getData('label'));
-			if ($journal->getSetting('enablePublicGalleyId')) {
-				$articleGalley->setStoredPubId('publisher-id', $this->getData('publicGalleyId'));
-			}
 			$articleGalley->setLocale($this->getData('galleyLocale'));
 			$articleGalley->setRemoteURL($this->getData('remoteURL'));
 
@@ -149,10 +127,6 @@ class ArticleGalleyForm extends Form {
 			$articleGalley = $articleGalleyDao->newDataObject();
 			$articleGalley->setSubmissionId($this->_submission->getId());
 			$articleGalley->setLabel($this->getData('label'));
-			if ($journal->getSetting('enablePublicGalleyId')) {
-				$articleGalley->setStoredPubId('publisher-id', $this->getData('publicGalleyId'));
-			}
-
 			$articleGalley->setLocale($this->getData('galleyLocale'));
 			$articleGalley->setRemoteURL($this->getData('remoteURL'));
 

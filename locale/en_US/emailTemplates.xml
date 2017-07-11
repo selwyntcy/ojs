@@ -7,7 +7,7 @@
   * Copyright (c) 2014-2016 Simon Fraser University Library
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
-  *
+  * Localization information: https://pkp.sfu.ca/wiki/index.php?title=Translating_OxS
   * Localized email templates XML file.
   -->
 
@@ -537,10 +537,9 @@ Our decision is to: Decline Submission<br />
 <br />
 I would ask that you undertake the copyediting of &quot;{$submissionTitle}&quot; for {$contextName} by following these steps.<br />
 1. Click on the Submission URL below.<br />
-2. Consult Copyediting Instructions posted on webpage.<br />
-3. Open any files available under Final Draft Files and copyedit, while adding Author Queries as needed.<br />
-4. Save copyedited file(s), and upload to Copyediting.<br />
-5. Notify the Editor that all files have been prepared, and that the auditing process may begin.<br />
+2. Open any files available under Draft Files and do your copyediting, while adding any Copyediting Discussions as needed.<br />
+3. Save copyedited file(s), and upload to Copyedited panel.<br />
+4. Notify the Editor that all files have been prepared, and that the Production process may begin.<br />
 <br />
 {$contextName} URL: <a href="{$contextUrl}">{$contextUrl}</a><br />
 Submission URL: <a href="{$submissionUrl}">{$submissionUrl}</a><br />
@@ -557,7 +556,7 @@ The submission &quot;{$submissionTitle}&quot; to {$contextName} now needs galley
 1. Click on the Submission URL below.<br />
 2. Log into the journal and use the Production Ready files to create the galleys according to the journal's standards.<br />
 3. Upload the galleys to the Galley Files section.<br />
-4. Notify the Editor that the galleys are uploaded and ready to be audited.<br />
+4. Notify the Editor using Production Discussions that the galleys are uploaded and ready.<br />
 <br />
 {$contextName} URL: <a href="{$contextUrl}">{$contextUrl}</a><br />
 Submission URL: <a href="{$submissionLayoutUrl}">{$submissionLayoutUrl}</a><br />
