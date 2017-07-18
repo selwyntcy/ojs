@@ -11,22 +11,25 @@
  * @uses $journalDescription string Journal description from HTML text editor
  * @uses $homepageImage object Image to be displayed on the homepage
  * @uses $additionalHomeContent string Arbitrary input from HTML text editor
- * @uses $enableAnnouncementsHomepage bool Should we display announcements here?
+ * @uses $announcements array List of announcements
+ * @uses $numAnnouncementsHomepage int Number of announcements to display on the
+ *       homepage
  * @uses $issue Issue Current issue
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$currentJournal->getLocalizedName()}
 
 <div class="page_index_journal">
 
-	{$journalDescription}
-
 	{call_hook name="Templates::Index::journal"}
 
 	{if $homepageImage}
 		<div class="homepage_image">
-			<img src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" width="{$homepageImage.width|escape}" height="{$homepageImage.height|escape}" {if $homepageImageAltText != ''}alt="{$homepageImageAltText|escape}"{else}alt="{translate key="common.journalHomepageImage.altText"}"{/if}>
+			<img src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 		</div>
 	{/if}
+
+	{* 20170713: retain journal description from old template *}
+	{$journalDescription}
 
 	{* 20160125: hack: slide show for IASACT photos *}
 	{* 20160128: upstream removed slick.js. temporarily withheld the photo slides *}
@@ -79,35 +82,9 @@
 		<div class="image" style="width: 225px;"><img src="{$publicFilesDir}/taofongshan_cross_t.jpg"></img></div>
 		<div class="image" style="width: 200px;"><img src="{$publicFilesDir}/cuhk_entrance_t.jpg"></img></div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function(){ldelim}
-			$('.slider-for').slick({ldelim}
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false,
-				fade: true,
-				asNavFor: '.slider-nav'
-			{rdelim});
-			$('.slider-nav').slick({ldelim}
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				asNavFor: '.slider-for',
-				dots: true,
-				centerMode: true,
-				centerPadding: '60px',
-				focusOnSelect: true,
-				arrows: true,
-				variableWidth: true,
-				autoplay: true,
-				autoplaySpeed: 7000
-			{rdelim});
-		{rdelim});
-	</script>
-
-	{$additionalHomeContent}
 
 	{* Announcements *}
-	{if $enableAnnouncementsHomepage}
+	{if $numAnnouncementsHomepage && $announcements|@count}
 		<div class="cmp_announcements highlight_first">
 			<h2>
 				{translate key="announcement.announcements"}
@@ -136,11 +113,28 @@
 		</div>
 	{/if}
 
-	{if $issue && $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
-		{* Display the table of contents or cover page of the current issue. *}
-		<h3>{$issue->getIssueIdentification()|strip_unsafe_html|nl2br}</h3>
-		{include file="frontend/objects/issue_toc.tpl"}
+	{* Latest issue *}
+	{if $issue}
+		<div class="current_issue">
+			<h2>
+				{translate key="journal.currentIssue"}
+			</h2>
+			<div class="current_issue_title">
+				{$issue->getIssueIdentification()|strip_unsafe_html}
+			</div>
+			{include file="frontend/objects/issue_toc.tpl"}
+			<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="read_more">
+				{translate key="journal.viewAllIssues"}
+			</a>
+		</div>
+	{/if}
+
+	{* Additional Homepage Content *}
+	{if $additionalHomeContent}
+		<div class="additional_content">
+			{$additionalHomeContent}
+		</div>
 	{/if}
 </div><!-- .page -->
 
-{include file="common/frontend/footer.tpl"}
+{include file="frontend/components/footer.tpl"}

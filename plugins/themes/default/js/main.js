@@ -168,4 +168,28 @@
 		$('#reviewerOptinGroup input').click(reviewerInterestsToggle);
 	}
 
+	// 20170713: hack: moved from templates/frontend/pages/indexJournal.tpl; to be run after jquery is loaded
+	$(document).ready(function(){
+		$('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			dots: true,
+			centerMode: true,
+			centerPadding: '60px',
+			focusOnSelect: true,
+			arrows: true,
+			variableWidth: true,
+			autoplay: true,
+			autoplaySpeed: 7000
+		});
+	});
+
 })(jQuery);
