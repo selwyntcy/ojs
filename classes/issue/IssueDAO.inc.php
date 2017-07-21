@@ -3,8 +3,8 @@
 /**
  * @file classes/issue/IssueDAO.inc.php
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2003-2016 John Willinsky
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueDAO
@@ -174,6 +174,49 @@ class IssueDAO extends DAO implements PKPPubIdPluginDAO {
 	}
 
 	/**
+	 * Retrieve Issues by identification
+	 * @param $journalId int
+	 * @param $volume int
+	 * @param $number string
+	 * @param $year int
+	 * @param $titles array
+	 * @return DAOResultFactory
+	 */
+	function getIssuesByIdentification($journalId, $volume = null, $number = null, $year = null, $titles = array()) {
+		$params = array();
+
+		$i = 1;
+		$sqlTitleJoin = '';
+		foreach ($titles as $title) {
+			$sqlTitleJoin .= ' JOIN issue_settings iss' .$i .' ON (i.issue_id = iss' .$i .'.issue_id AND iss' .$i .'.setting_name = \'title\' AND iss' .$i .'.setting_value = ?)';
+			$params[] = $title;
+			$i++;
+		}
+		$params[] = (int) $journalId;
+		if ($volume !== null) {
+			$params[] = (int) $volume;
+		}
+		if ($number !== null) {
+			$params[] = $number;
+		}
+		if ($year !== null) {
+			$params[] = (int) $year;
+		}
+
+		$result = $this->retrieve(
+			'SELECT i.*
+			FROM issues i'
+			.$sqlTitleJoin
+			.' WHERE i.journal_id = ?'
+			.(($volume !== null)?' AND i.volume = ?':'')
+			.(($number !== null)?' AND i.number = ?':'')
+			.(($year !== null)?' AND i.year = ?':''),
+			$params
+		);
+		return new DAOResultFactory($result, $this, '_returnIssueFromRow');
+	}
+
+	/**
 	 * Retrieve Issue by "best" issue id -- public ID if it exists,
 	 * falling back on the internal issue ID otherwise.
 	 * @param $issueId string
@@ -269,7 +312,7 @@ class IssueDAO extends DAO implements PKPPubIdPluginDAO {
 	 * @return array
 	 */
 	function getLocaleFieldNames() {
-		return array('title', 'description');
+		return array('title', 'description', 'coverImageAltText', 'coverImage');
 	}
 
 	/**
@@ -281,8 +324,6 @@ class IssueDAO extends DAO implements PKPPubIdPluginDAO {
 		$additionalFields = parent::getAdditionalFieldNames();
 		// FIXME: Move this to a PID plug-in.
 		$additionalFields[] = 'pub-id::publisher-id';
-		$additionalFields[] = 'coverImage';
-		$additionalFields[] = 'coverImageAltText';
 		return $additionalFields;
 	}
 
@@ -420,9 +461,12 @@ class IssueDAO extends DAO implements PKPPubIdPluginDAO {
 		import('classes.file.PublicFileManager');
 		$publicFileManager = new PublicFileManager();
 
-		$coverImage = $issue->getCoverImage();
-		if (!empty($coverImage)) {
-			$publicFileManager->removeJournalFile($issue->getJournalId(), $coverImage);
+		if (is_array($issue->getCoverImage(null))) {
+			foreach ($issue->getCoverImage(null) as $coverImage) {
+				if ($coverImage != '') {
+					$publicFileManager->removeJournalFile($issue->getJournalId(), $coverImage);
+				}
+			}
 		}
 
 		$issueId = $issue->getId();

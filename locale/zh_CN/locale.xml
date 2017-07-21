@@ -4,8 +4,8 @@
 <!--
   * locale/zh_CN/locale.xml
   *
-  * Copyright (c) 2013-2016 Simon Fraser University Library
-  * Copyright (c) 2003-2016 John Willinsky
+  * Copyright (c) 2013-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings.
@@ -306,16 +306,6 @@
 	<!-- Reader Comments -->
 	<message key="comments.commentsOnArticle">这篇文章的评论</message>
 	<message key="comments.authenticated"><![CDATA[通过 <a href="{$publicProfileUrl}" target="_parent">{$userName}</a>]]></message>
-
-	<!-- Site Administration -->
-
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[为了让这个网站的所有期刊内容可以让一个全球发行的研究数据库检索，请将您网站的网址(url)<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">注册</a>到Public Knowledge Project的元数据<a href="http://pkp.sfu.ca/harvester/" target="_blank">收集器</a> 。该工具将会收集期刊中每个检索项目的元数据，以便精确和集中搜寻每个隶属于<a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">为收集元数据而设的开放文件初始协议</a>的研究网站。
-<br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">点击这里</a>并且输入 <span class="highlight">{$siteUrl}</span>在<strong>网站网址</strong>，和 <span class="highlight">{$oaiUrl}</span>在<strong>供「公开文件柜索引」(OAI)的基础网址</strong>。
-<br /><br />
-藉由修改开放期刊系统的配置，请注意开放存档检索界面可以被关闭。未来开放期刊系统的版本将会允设一个网站的各别期刊可以配置开启或关闭OAI系统。]]></message>
-
-
 
 	<!-- Languages -->
 	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>从PKP网站下载的语言包暂时不被支持，原因如下:</p>
@@ -970,18 +960,18 @@
 	<message key="notification.mailListDescription">请输入您的电子邮件地址，便于接收该期刊重要的新内容通知.</message>
 	<message key="notification.notificationsPublicDescription">这页显示了杂志刊期或公告相关的重要更新. 您可以通过RSS(点击右侧的图片)或者<![CDATA[  <a href="{$emailUrl}">通过电子邮件.</a>订阅这个通知 ]]></message>
 
-	<message key="notification.type.articleSubmitted">一篇新文章, "{$param}", 已经提交.</message>
+	<message key="notification.type.articleSubmitted">一篇新文章, "{$title}", 已经提交.</message>
 	<message key="notification.type.editing">编辑事件</message>
-	<message key="notification.type.editorDecisionComment">在编辑的决定里已经对 "{$param}"进行了评论</message>
-	<message key="notification.type.galleyModified">草稿已经被修改，关于"{$param}".</message>
+	<message key="notification.type.editorDecisionComment">在编辑的决定里已经对 "{$title}"进行了评论</message>
+	<message key="notification.type.galleyModified">草稿已经被修改，关于"{$title}".</message>
 	<message key="notification.type.issuePublished">一个刊期已经出版</message>
 	<message key="notification.type.newAnnouncement">一条新的公告已经被创建.</message>
-	<message key="notification.type.reviewerFormComment">一个关于 "{$param}"的审稿评论已经提交.</message>
+	<message key="notification.type.reviewerFormComment">一个关于 "{$title}"的审稿评论已经提交.</message>
 	<message key="notification.type.reviewing">审稿事件</message>
 	<message key="notification.type.site">站点事件</message>
-	<message key="notification.type.submissionComment">一个编辑已经对"{$param}"进行了评论.</message>
+	<message key="notification.type.submissionComment">一个编辑已经对"{$title}"进行了评论.</message>
 	<message key="notification.type.submissions">投稿时间</message>
-	<message key="notification.type.userComment">一个读者对"{$param}"进行了评论</message>
+	<message key="notification.type.userComment">一个读者对"{$title}"进行了评论</message>
 
 	<!--
 	 *

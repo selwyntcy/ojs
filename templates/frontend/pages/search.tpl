@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/search.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2003-2016 John Willinsky
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Display the page to search and view search results.
@@ -43,13 +43,13 @@
 					<label class="label">
 						{translate key="search.dateFrom"}
 					</label>
-					{html_select_date prefix="dateFrom" time=$dateFrom start_year=$yearStart end_year=$yaerEnd|@end year_empty="" month_empty="" day_empty="" field_order="YMD"}
+					{html_select_date prefix="dateFrom" time=$dateFrom start_year=$yearStart end_year=$yearEnd year_empty="" month_empty="" day_empty="" field_order="YMD"}
 				</div>
 				<div class="to">
 					<label class="label">
 						{translate key="search.dateTo"}
 					</label>
-					{html_select_date prefix="dateTo" time=$dateTo start_year=$yearStart end_year=$yaerEnd|@end year_empty="" month_empty="" day_empty="" field_order="YMD"}
+					{html_select_date prefix="dateTo" time=$dateTo start_year=$yearStart end_year=$yearEnd year_empty="" month_empty="" day_empty="" field_order="YMD"}
 				</div>
 			</div>
 			<div class="author">

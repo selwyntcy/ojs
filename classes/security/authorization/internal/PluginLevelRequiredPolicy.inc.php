@@ -2,8 +2,8 @@
 /**
  * @file classes/security/authorization/internal/PluginLevelRequiredPolicy.inc.php
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2000-2016 John Willinsky
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2000-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PluginLevelRequiredPolicy
@@ -24,8 +24,8 @@ class PluginLevelRequiredPolicy extends AuthorizationPolicy {
 	 * Constructor
 	 * @param $request PKPRequest
 	 */
-	function PluginLevelRequiredPolicy($request, $contextLevel) {
-		parent::AuthorizationPolicy();
+	function __construct($request, $contextLevel) {
+		parent::__construct();
 		$this->_contextLevel =& $contextLevel;
 	}
 

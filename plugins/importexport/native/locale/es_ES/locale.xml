@@ -4,8 +4,8 @@
 <!--
   * plugins/importexport/native/locale/es_ES/locale.xml
   *
-  * Copyright (c) 2014-2016 Simon Fraser University Library
-  * Copyright (c) 2003-2016 John Willinsky
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
   * Localization strings.
@@ -20,4 +20,8 @@
 	<message key="plugins.importexport.native.results">Resultados</message>
 	<message key="plugins.inportexport.native.uploadFile">Por favor, sube un archivo en "Importar" para continuar.</message>
 	<message key="plugins.importexport.native.importComplete">La importación se ha completado con éxito. Se han importado los siguientes elementos:</message>
+	<message key="plugins.importexport.native.import.error.sectionTitleMismatch">El título de sección "{$section1Title}" y el título de sección "{$section2Title}" del número "{$issueTitle}" se corresponden con otras secciones de la revista.</message>
+	<message key="plugins.importexport.native.import.error.sectionTitleMatch">El título de sección "{$sectionTitle}" del número "{$issueTitle}" se corresponde con una sección existente de la revista, pero otro título de esta sección no se corresponde con un título en la sección existente de la revista.</message>
+	<message key="plugins.importexport.native.import.error.sectionAbbrevMismatch">La abreviatura de sección "{$section1Abbrev}" y la abreviatura de sección "{$section2Abbrev}" del número "{$issueTitle}" se corresponden con otras secciones de la revista.</message>
+	<message key="plugins.importexport.native.import.error.sectionAbbrevMatch">La abreviatura de sección "{$sectionAbbrev}" del número "{$issueTitle}" se corresponde con una sección existente de la revista, pero otra abreviatura de esta sección no se corresponde con una abreviatura en la sección existente de la revista.</message>
 </locale>

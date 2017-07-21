@@ -4,8 +4,8 @@
 <!--
   * plugins/importexport/medra/locale/sr_SR/locale.xml
   *
-  * Copyright (c) 2013-2016 Simon Fraser University Library
-  * Copyright (c) 2003-2016 John Willinsky
+  * Copyright (c) 2013-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings
@@ -40,7 +40,8 @@
 
 	<message key="plugins.importexport.medra.workOrProduct"><![CDATA[NAPOMENA: DOI-i dodeljeni člancima biće izvezeni u  mEDRA kao <a href="http://www.medra.org/en/metadata_td.htm" target="_blank">'radovi'</a>. DOI-i dodeljeni prikazima biće izvezeni kao<a href="http://www.medra.org/en/metadata_td.htm" target="_blank">'manifestacije'</a>.]]></message>
 		
-	<message key="plugins.importexport.medra.cliUsage">Korišćenje: 
-{$scriptName} {$pluginName} export xmlFileName journal_path {issues|articles|galleys} objectId1 [objectId2] ...
-{$scriptName} {$pluginName} register journal_path {issues|articles|galleys} objectId1 [objectId2] ...</message>
+	<message key="plugins.importexport.medra.cliUsage"><![CDATA[Korišćenje:
+{$scriptName} {$pluginName} export [xmlFileName] [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+]]></message>
 </locale>

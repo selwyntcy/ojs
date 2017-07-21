@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/article.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2003-2016 John Willinsky
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Display the page to view an article with all of it's details.
@@ -23,10 +23,6 @@
 
 	{* Show article overview *}
 	{include file="frontend/objects/article_details.tpl"}
-
-	{* Display Dublin Core metadata *}
-	{include file="frontend/objects/article_dublinCore.tpl" article=$article}
-	{include file="frontend/objects/article_googleScholar.tpl" article=$article}
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
 

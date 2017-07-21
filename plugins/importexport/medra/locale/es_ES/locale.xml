@@ -3,8 +3,8 @@
 <!--
   * plugins/importexport/medra/locale/es_ES/locale.xml
   *
-  * Copyright (c) 2013-2016 Simon Fraser University Library
-  * Copyright (c) 2003-2016 John Willinsky
+  * Copyright (c) 2013-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
   * Localization strings.
@@ -37,6 +37,8 @@
 
 	<message key="plugins.importexport.medra.workOrProduct"><![CDATA[Nota: Los DOI asignados a los artículos se exportarán a mEDRA como <a href="http://www.medra.org/en/metadata_td.htm" target="_blank">'obras'</a>. Los DOI asignados a las galeradas se exportarán como <a href="http://www.medra.org/en/metadata_td.htm" target="_blank">'manifestación'</a>.]]></message>
 		
-	<message key="plugins.importexport.medra.cliUsage"><![CDATA[Uso: {$scriptName} {$pluginName} exportar xmlFileName journal_path {issues|articles|galleys} objectId1 [objectId2] ... {$scriptName} {$pluginName} registrar journal_path {issues|articles|galleys} objectId1 [objectId2] ...
+	<message key="plugins.importexport.medra.cliUsage"><![CDATA[Uso:
+{$scriptName} {$pluginName} export [xmlFileName] [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
 ]]></message>
 </locale>

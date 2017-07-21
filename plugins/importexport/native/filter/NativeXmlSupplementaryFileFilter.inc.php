@@ -3,8 +3,8 @@
 /**
  * @file plugins/importexport/native/filter/NativeXmlSupplementaryFileFilter.inc.php
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2000-2016 John Willinsky
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2000-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NativeXmlSupplementaryFileFilter
@@ -20,8 +20,8 @@ class NativeXmlSupplementaryFileFilter extends NativeXmlArticleFileFilter {
 	 * Constructor
 	 * @param $filterGroup FilterGroup
 	 */
-	function NativeXmlSupplementaryFileFilter($filterGroup) {
-		parent::NativeXmlArticleFileFilter($filterGroup);
+	function __construct($filterGroup) {
+		parent::__construct($filterGroup);
 	}
 
 
@@ -67,11 +67,14 @@ class NativeXmlSupplementaryFileFilter extends NativeXmlArticleFileFilter {
 	 * @param $submissionFiles array
 	 */
 	function handleChildElement($node, $stageId, $fileId, &$submissionFiles) {
+		$deployment = $this->getDeployment();
+		$submission = $deployment->getSubmission();
 		$localizedSetterMappings = $this->_getLocalizedSupplementaryFileSetterMappings();
 		if (isset($localizedSetterMappings[$node->tagName])) {
 			// If applicable, call a setter for localized content.
 			$setterFunction = $localizedSetterMappings[$node->tagName];
 			list($locale, $value) = $this->parseLocalizedContent($node);
+			if (empty($locale)) $locale = $submission->getLocale();
 			$submissionFiles[count($submissionFiles)-1]->$setterFunction($value, $locale);
 		} else switch ($node->tagName) {
 			case 'date_created':

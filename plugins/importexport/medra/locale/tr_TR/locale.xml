@@ -4,8 +4,8 @@
 <!--
   * plugins/importexport/medra/locale/tr_TR/locale.xml
   *
-  * Copyright (c) 2013-2016 Simon Fraser University Library
-  * Copyright (c) 2003-2016 John Willinsky
+  * Copyright (c) 2013-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings
@@ -28,7 +28,8 @@
 	<message key="plugins.importexport.medra.settings.form.fromEmailRequired">Lütfen teknik bir iletişim e-postası giriniz.</message>
 	<message key="plugins.importexport.medra.settings.form.work">iş</message>
 	<message key="plugins.importexport.medra.settings.form.manifestation">ortaya koyma</message>
-	<message key="plugins.importexport.medra.cliUsage">Kullanım: 
-{$scriptName} {$pluginName} export xmlFileName journal_path {issues|articles|galleys} objectId1 [objectId2] ...
-{$scriptName} {$pluginName} register journal_path {issues|articles|galleys} objectId1 [objectId2] ...</message>
+	<message key="plugins.importexport.medra.cliUsage"><![CDATA[Kullanım:
+{$scriptName} {$pluginName} export [xmlFileName] [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+]]></message>
 </locale>
