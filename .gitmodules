@@ -12,7 +12,7 @@
 	url = https://github.com/pkp/translator.git
 [submodule "plugins/generic/tinymce"]
 	path = plugins/generic/tinymce
-	url = https://github.com/pkp/tinymce.git
+	url = git@github.com:selwyntcy/tinymce.git
 [submodule "plugins/generic/pdfJsViewer"]
 	path = plugins/generic/pdfJsViewer
 	url = https://github.com/pkp/pdfJsViewer.git
